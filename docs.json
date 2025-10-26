@@ -29,10 +29,14 @@
           }
         ]
       },
-  {
+      {
   "tab": "User Guideline",
   "icon": "book-open",
   "groups": [
+    {
+      "group": "USER GUIDELINE",
+      "pages": ["guideline/introduction"]
+    },
     {
       "group": "GENERATE CAMPAIGN REPORT",
       "pages": [
@@ -134,6 +138,72 @@
     }
   ]
 },
+    {
+    "tab": "Programmatic",
+    "icon": "tv",
+    "groups": [
+    {
+      "group": "PROGRAMMATIC",
+      "pages": [
+        "programmatic/introduction",
+        "programmatic/getting-started-with-programmatic"
+      ]
+    },
+    {
+        "group": "FEATURES",
+        "pages": [
+          {
+            "group": "Deal Management",
+            "expanded": false,
+            "pages":[
+              "programmatic/deal-management/deal-management",
+              "programmatic/deal-management/deal-type",
+              "programmatic/deal-management/deal-status",
+              {
+                "group": "Create a Deal",
+                "expanded": false,
+                "pages": [
+                  "programmatic/deal-management/create/pg",
+                  "programmatic/deal-management/create/pmp"
+                ]
+              },
+              "programmatic/deal-management/edit"
+            ]
+          },
+          {
+            "group": "Ad Exchange",
+            "expanded": false,
+            "pages":[
+              "programmatic/ad-exchange/ad-exchange",
+              "programmatic/ad-exchange/download"
+            ]
+          },
+          {
+            "group": "Creative Approval",
+            "expanded": false,
+            "pages":[
+              "programmatic/creative-approval/creative-approval",
+              "programmatic/creative-approval/approve",
+              "programmatic/creative-approval/deny"
+            ]
+          }
+      ]
+    },
+      {
+      "group": "DSP PARTNERS",
+      "pages": [
+        "programmatic/dsp-partner"
+      ]
+    },
+      {
+      "group": "RESOURCE & SUPPORT",
+      "pages": [
+        "programmatic/resource-and-support/frequently-asked-question",
+        "programmatic/resource-and-support/contact-us"
+      ]
+    }
+    ]
+    },
       {
         "tab": "API Reference",
         "icon": "code",
@@ -155,26 +225,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://id.linkedin.com/in/ageliusg",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://lynxssp.com",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://lynxssp.com",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/lynx-light.svg",
