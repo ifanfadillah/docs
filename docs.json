@@ -15,11 +15,29 @@
         "icon": "newspaper",
         "groups": [
           {
-            "group": "Introduction",
-            "pages": ["client-portal"]
+            "group": "Getting Started on the Lynx SSP",
+            "pages": ["documentation/getting-started/overview",
+            {
+              "group" : "Access Lynx SSP Platform",
+              "expanded": false,
+              "pages": [
+                "documentation/getting-started/access/request-account",
+                "documentation/getting-started/access/login",
+                "documentation/getting-started/access/forgot-password"
+              ]
+            },
+            {
+              "group" : "Introduction",
+              "expanded": false,
+              "pages": [
+                "documentation/getting-started/introduction/navigation-menu",
+                "documentation/getting-started/introduction/dashboard-overview"
+              ]
+            }
+          ]
           },
           {
-            "group": "Account",
+            "group": "Inventory",
             "pages": ["client-portal/request-account", "client-portal/login"]
           }
         ]
@@ -185,8 +203,8 @@
             ]
           },
           {
-            "group": "DSP PARTNERS",
-            "pages": ["programmatic/dsp-partner"]
+            "group": "DSP PLATFORM",
+            "pages": ["programmatic/dsp-platform"]
           },
           {
             "group": "RESOURCE & SUPPORT",
