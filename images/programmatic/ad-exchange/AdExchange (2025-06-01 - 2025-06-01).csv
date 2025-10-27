@@ -1,0 +1,3 @@
+﻿uuid,name,address_notes,sku,images,displayType,displayCategory,isActive,isDisplayOwner,total_adrequest,total_adresponse,total_played,impression,spend_rate,revenue,completion_rate,winning_ads_price,last_updated_at
+530770ac-3587-4ce0-8865-6511df9fabb2,[Testing] Inventory HTML 5 Player,Test Address Notes,testhtml5player,,,,TRUE,1,2028,972,972,972,100,0,0,0,2025-06-01 21:30:02
+99d6b40b-b49e-43e5-b1d4-f58ba4bb38a6,Inventory Anwar,Jalan jakarta,inventoryanwar,,,,TRUE,1,2011,0,0,0,0,0,0,0,2025-06-01 23:50:01
