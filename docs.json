@@ -177,8 +177,9 @@
                 "expanded": false,
                 "pages": [
                   "programmatic/creative-approval/creative-approval",
+                  "programmatic/creative-approval/status",
                   "programmatic/creative-approval/approve",
-                  "programmatic/creative-approval/deny"
+                  "programmatic/creative-approval/reject"
                 ]
               }
             ]
