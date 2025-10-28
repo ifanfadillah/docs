@@ -8,6 +8,9 @@
     "dark": "#10294C"
   },
   "favicon": "/lynx-favicon.svg",
+  "interaction": {
+    "drilldown": true
+  },
   "navigation": {
     "tabs": [
       {
@@ -16,28 +19,112 @@
         "groups": [
           {
             "group": "Getting Started on the Lynx SSP",
-            "pages": ["documentation/getting-started/overview",
-            {
-              "group" : "Access Lynx SSP Platform",
-              "expanded": false,
-              "pages": [
-                "documentation/getting-started/access/request-account",
-                "documentation/getting-started/access/login",
-                "documentation/getting-started/access/forgot-password"
-              ]
-            },
-            {
-              "group" : "Introduction",
-              "expanded": false,
-              "pages": [
-                "documentation/getting-started/introduction/navigation-menu",
-                "documentation/getting-started/introduction/dashboard-overview"
-              ]
-            }
-          ]
+            "pages": [
+              "documentation/getting-started/overview",
+              {
+                "group": "Access Lynx SSP Platform",
+                "expanded": false,
+                "pages": [
+                  "documentation/getting-started/access/request-account",
+                  "documentation/getting-started/access/login",
+                  "documentation/getting-started/access/forgot-password"
+                ]
+              },
+              {
+                "group": "Introduction",
+                "expanded": false,
+                "pages": [
+                  "documentation/getting-started/introduction/navigation-menu",
+                  "documentation/getting-started/introduction/dashboard-overview"
+                ]
+              }
+            ]
           },
           {
             "group": "Inventory",
+            "pages": [
+              {
+                "group": "Display",
+                "expanded": false,
+                "pages": [
+                  "documentation/inventory/display/display",
+                  "documentation/inventory/display/specification-type-and-category",
+                  {
+                    "group": "DOOH",
+                    "expanded": false,
+                    "pages": [
+                      "documentation/inventory/display/dooh/create"
+                    ]
+                  },
+                  {
+                    "group": "OOH",
+                    "expanded": false,
+                    "pages": [
+                      "documentation/inventory/display/ooh/create"
+                    ]
+                  },
+                  "documentation/inventory/display/edit",
+                  "documentation/inventory/display/delete"
+                ]
+              },
+              {
+                "group": "Geofence",
+                "expanded": false,
+                "pages": [
+                  "documentation/inventory/geofence/create",
+                  "documentation/inventory/geofence/edit",
+                  "documentation/inventory/geofence/delete"
+                ]
+              },
+              "documentation/inventory/schedule"
+            ]
+          },
+          {
+            "group": "Creative Management",
+            "pages": [
+              {
+                "group": "Media Library",
+                "expanded": false,
+                "pages": [
+                  "documentation/creative-management/media-library/overview",
+                  "documentation/creative-management/media-library/upload-creative",
+                  "documentation/creative-management/media-library/delete-creative"
+                ]
+              },
+              {
+                "group": "Filler Content",
+                "expanded": false,
+                "pages": [
+                  "documentation/creative-management/filler-content/overview",
+                  "documentation/creative-management/filler-content/create",
+                  "documentation/creative-management/filler-content/edit",
+                  "documentation/creative-management/filler-content/delete"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Campaign",
+            "pages": [
+              "documentation/campaign/campaign",
+              "documentation/campaign/status",
+              "documentation/campaign/type",
+              {
+                "group": "Create a Campaign",
+                "expanded": false,
+                "pages": [
+                  "documentation/campaign/create/regular",
+                  "documentation/campaign/create/exclusive"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Playlist Order",
+            "pages": ["client-portal/request-account", "client-portal/login"]
+          },
+          {
+            "group": "Settings",
             "pages": ["client-portal/request-account", "client-portal/login"]
           }
         ]
@@ -157,9 +244,7 @@
         "groups": [
           {
             "group": "PROGRAMMATIC",
-            "pages": [
-              "programmatic/introduction"
-            ]
+            "pages": ["programmatic/introduction"]
           },
           {
             "group": "FEATURES",
