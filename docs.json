@@ -120,8 +120,17 @@
             ]
           },
           {
-            "group": "Playlist Order",
-            "pages": ["client-portal/request-account", "client-portal/login"]
+            "group": "Operational",
+            "pages": [
+              {
+                "group" : "Playlist Order",
+                "expanded": false,
+                "pages": [
+                  "documentation/operational/playlist-order/overview",
+                  "documentation/operational/playlist-order/change"
+                ]
+              }
+            ]
           },
           {
             "group": "Settings",
