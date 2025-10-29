@@ -52,16 +52,12 @@
                   {
                     "group": "DOOH",
                     "expanded": false,
-                    "pages": [
-                      "documentation/inventory/display/dooh/create"
-                    ]
+                    "pages": ["documentation/inventory/display/dooh/create"]
                   },
                   {
                     "group": "OOH",
                     "expanded": false,
-                    "pages": [
-                      "documentation/inventory/display/ooh/create"
-                    ]
+                    "pages": ["documentation/inventory/display/ooh/create"]
                   },
                   "documentation/inventory/display/edit",
                   "documentation/inventory/display/delete"
@@ -104,17 +100,66 @@
             ]
           },
           {
-            "group": "Campaign",
+            "group": "Campaign Management",
             "pages": [
-              "documentation/campaign/campaign",
-              "documentation/campaign/status",
-              "documentation/campaign/type",
               {
-                "group": "Create a Campaign",
+                "group": "Campaign",
                 "expanded": false,
                 "pages": [
-                  "documentation/campaign/create/regular",
-                  "documentation/campaign/create/exclusive"
+                  "documentation/campaign-management/campaign/overview",
+                  "documentation/campaign-management/campaign/label",
+                  "documentation/campaign-management/campaign/type",
+                  "documentation/campaign-management/campaign/status"
+                ]
+              },
+              {
+                "group": "Create a Campaign",
+                "expanded": true,
+                "pages": [
+                  "documentation/campaign-management/create/how-to-create",
+                  "documentation/campaign-management/create/campaign-information",
+                  {
+                    "group": "Media Plan",
+                    "expanded": false,
+                    "pages": [
+                      "documentation/campaign-management/media-plan/create",
+                      {
+                        "group": "Schedules",
+                        "expanded": false,
+                        "pages": [
+                          "documentation/campaign-management/media-plan/schedule/schedule",
+                          "documentation/campaign-management/media-plan/schedule/edit"
+                        ]
+                      },
+                      {
+                        "group": "Select Inventory in the Media Plan",
+                        "expanded": false,
+                        "pages": [
+                          "documentation/campaign-management/media-plan/inventories",
+                          "documentation/campaign-management/media-plan/"
+                        ]
+                      },
+                      "documentation/campaign-management/media-plan/edit",
+                      "documentation/campaign-management/media-plan/delete"
+                    ]
+                  }
+                ]
+              },
+              "documentation/campaign-management/create",
+              {
+                "group": "Report",
+                "expanded": false,
+                "pages": [
+                  "documentation/campaign-management/campaign-report/overview",
+                  "documentation/campaign-management/campaign-report/download"
+                ]
+              },
+              {
+                "group": "View Your Campaign Item",
+                "expanded": false,
+                "pages": [
+                  "documentation/campaign-management/view-campaign/edit",
+                  "documentation/campaign-management/view-campaign/delete"
                 ]
               }
             ]
@@ -123,7 +168,7 @@
             "group": "Operational",
             "pages": [
               {
-                "group" : "Playlist Order",
+                "group": "Playlist Order",
                 "expanded": false,
                 "pages": [
                   "documentation/operational/playlist-order/overview",
