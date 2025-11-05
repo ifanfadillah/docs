@@ -155,7 +155,7 @@
                       {
                         "group": "Ad Measurement",
                         "expanded": false,
-                        "pages" : [
+                        "pages": [
                           "documentation/campaign-management/create/media-plan/ad-measurement/select",
                           "documentation/campaign-management/create/media-plan/ad-measurement/version"
                         ]
@@ -163,7 +163,7 @@
                       {
                         "group": "Proof of Play",
                         "expanded": false,
-                        "pages" : [
+                        "pages": [
                           "documentation/campaign-management/create/media-plan/proof-of-play/add",
                           "documentation/campaign-management/create/media-plan/proof-of-play/delete"
                         ]
@@ -171,7 +171,7 @@
                       {
                         "group": "View Your Media Plan",
                         "expanded": false,
-                        "pages" : [
+                        "pages": [
                           "documentation/campaign-management/create/media-plan/view-media-plan/edit",
                           "documentation/campaign-management/create/media-plan/view-media-plan/delete"
                         ]
@@ -181,11 +181,13 @@
                 ]
               },
               {
-                "group": "Report",
+                "group": "Reports",
                 "expanded": false,
                 "pages": [
-                  "documentation/campaign-management/campaign-report/overview",
-                  "documentation/campaign-management/campaign-report/download"
+                  "documentation/campaign-management/reports/overview",
+                  "documentation/campaign-management/reports/download",
+                  "documentation/campaign-management/reports/share",
+                  "documentation/campaign-management/reports/access"
                 ]
               },
               {
