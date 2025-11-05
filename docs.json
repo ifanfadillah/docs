@@ -122,30 +122,64 @@
                     "group": "Media Plan",
                     "expanded": false,
                     "pages": [
-                      "documentation/campaign-management/media-plan/create",
+                      "documentation/campaign-management/create/media-plan/create",
                       {
                         "group": "Schedules",
                         "expanded": false,
                         "pages": [
-                          "documentation/campaign-management/media-plan/schedule/schedule",
-                          "documentation/campaign-management/media-plan/schedule/edit"
+                          "documentation/campaign-management/create/media-plan/schedules/edit"
                         ]
                       },
                       {
-                        "group": "Select Inventory in the Media Plan",
+                        "group": "Inventories",
                         "expanded": false,
                         "pages": [
-                          "documentation/campaign-management/media-plan/inventories",
-                          "documentation/campaign-management/media-plan/"
+                          "documentation/campaign-management/create/media-plan/inventories/select",
+                          "documentation/campaign-management/create/media-plan/inventories/remove"
                         ]
                       },
-                      "documentation/campaign-management/media-plan/edit",
-                      "documentation/campaign-management/media-plan/delete"
+                      {
+                        "group": "Creatives",
+                        "expanded": false,
+                        "pages": [
+                          "documentation/campaign-management/create/media-plan/creatives/add-to-inventory",
+                          "documentation/campaign-management/create/media-plan/creatives/custom-schedule",
+                          "documentation/campaign-management/create/media-plan/creatives/sent-to-playlist",
+                          "documentation/campaign-management/create/media-plan/creatives/status",
+                          "documentation/campaign-management/create/media-plan/creatives/remove"
+                        ]
+                      },
+                      "documentation/campaign-management/create/media-plan/generate-report",
+                      "documentation/campaign-management/create/media-plan/launch",
+                      "documentation/campaign-management/create/media-plan/force-complete",
+                      {
+                        "group": "Ad Measurement",
+                        "expanded": false,
+                        "pages" : [
+                          "documentation/campaign-management/create/media-plan/ad-measurement/select",
+                          "documentation/campaign-management/create/media-plan/ad-measurement/version"
+                        ]
+                      },
+                      {
+                        "group": "Proof of Play",
+                        "expanded": false,
+                        "pages" : [
+                          "documentation/campaign-management/create/media-plan/proof-of-play/add",
+                          "documentation/campaign-management/create/media-plan/proof-of-play/delete"
+                        ]
+                      },
+                      {
+                        "group": "View Your Media Plan",
+                        "expanded": false,
+                        "pages" : [
+                          "documentation/campaign-management/create/media-plan/view-media-plan/edit",
+                          "documentation/campaign-management/create/media-plan/view-media-plan/delete"
+                        ]
+                      }
                     ]
                   }
                 ]
               },
-              "documentation/campaign-management/create",
               {
                 "group": "Report",
                 "expanded": false,
