@@ -215,7 +215,28 @@
           },
           {
             "group": "Settings",
-            "pages": ["client-portal/request-account", "client-portal/login"]
+            "pages": [
+                "documentation/settings/manage-profile",
+                "documentation/settings/change-password",
+                {
+                  "group": "Members Management",
+                  "expanded": false,
+                  "pages": [
+                    "documentation/settings/members-management/overview",
+                    "documentation/settings/members-management/delete"
+                  ]
+                },
+                {
+                  "group": "Brands Management",
+                  "expanded": false,
+                  "pages": [
+                    "documentation/settings/brands-management/overview",
+                    "documentation/settings/brands-management/add",
+                    "documentation/settings/brands-management/edit",
+                    "documentation/settings/brands-management/invite-member"
+                  ]
+                }
+            ]
           }
         ]
       },
