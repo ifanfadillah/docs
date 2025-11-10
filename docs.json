@@ -43,24 +43,99 @@
           {
             "group": "Inventory",
             "pages": [
+              "documentation/inventory/display",
+              "documentation/inventory/specification-type-and-category",
               {
-                "group": "Display",
+                "group": "DOOH",
                 "expanded": false,
                 "pages": [
-                  "documentation/inventory/display/display",
-                  "documentation/inventory/display/specification-type-and-category",
                   {
-                    "group": "DOOH",
+                    "group": "Add New DOOH Inventory",
                     "expanded": false,
-                    "pages": ["documentation/inventory/display/dooh/create"]
+                    "pages": [
+                      "documentation/inventory/dooh/add/how-to-add",
+                      "documentation/inventory/dooh/add/roadside",
+                      "documentation/inventory/dooh/add/place-based",
+                      "documentation/inventory/dooh/add/fleet"
+                    ]
                   },
                   {
-                    "group": "OOH",
-                    "expanded": false,
-                    "pages": ["documentation/inventory/display/ooh/create"]
+                    "group": "Screens",
+                    "pages": [
+                      "documentation/inventory/dooh/screens/connect-to-screen",
+                      {
+                        "group": "Connection Type",
+                        "expanded": false,
+                        "pages": [
+                          {
+                            "group": "Lynx CMS (Screen App)",
+                            "expanded": false,
+                            "pages": [
+                              "documentation/inventory/dooh/screens/screen-app/installation-windows",
+                              "documentation/inventory/dooh/screens/screen-app/installationandroid",
+                              "documentation/inventory/dooh/screens/screen-app/connection"
+                            ]
+                          },
+                          {
+                            "group": "HTML5",
+                            "expanded": false,
+                            "pages": [
+                              "documentation/inventory/dooh/screens/html5/connection"
+                            ]
+                          },
+                          {
+                            "group": "API Integration",
+                            "expanded": false,
+                            "pages": [
+                              "documentation/inventory/dooh/screens/api/connection",
+                              "documentation/inventory/dooh/screens/api/authentication",
+                              "documentation/inventory/dooh/screens/api/ad-serving",
+                              "documentation/inventory/dooh/screens/api/sandbox-environment"
+                            ]
+                          }
+                        ]
+                      },
+                      "documentation/inventory/dooh/screens/status",
+                      {
+                        "group": "View Screen Connection",
+                        "expanded": false,
+                        "pages": [
+                          "documentation/inventory/dooh/screens/check-connection",
+                          "documentation/inventory/dooh/screens/disconnect-player"
+                        ]
+                      }
+                    ]
                   },
-                  "documentation/inventory/display/edit",
-                  "documentation/inventory/display/delete"
+                  {
+                    "group": "Playlist & Playlog",
+                    "expanded": false,
+                    "pages": [
+                      "documentation/inventory/dooh/playlist-playlog/overview",
+                      "documentation/inventory/dooh/playlist-playlog/download"
+                    ]
+                  },
+                  "documentation/inventory/dooh/occupancy-rate",
+                  "documentation/inventory/dooh/set-to-programmatic"
+                ]
+              },
+              {
+                "group": "OOH",
+                "expanded": false,
+                "pages": [
+                  {
+                    "group": "Create a OOH Inventory",
+                    "expanded": false,
+                    "pages": ["documentation/inventory/ooh/create"]
+                  },
+                  "documentation/inventory/ooh/occupancy-rate"
+                ]
+              },
+              {
+                "group": "View Your Display",
+                "expanded": false,
+                "pages": [
+                  "documentation/inventory/view-display/edit",
+                  "documentation/inventory/view-display/delete"
                 ]
               },
               {
@@ -109,7 +184,15 @@
                   "documentation/campaign-management/campaign/overview",
                   "documentation/campaign-management/campaign/label",
                   "documentation/campaign-management/campaign/type",
-                  "documentation/campaign-management/campaign/status"
+                  "documentation/campaign-management/campaign/status",
+                  {
+                    "group": "View Your Campaign",
+                    "expanded": false,
+                    "pages": [
+                      "documentation/campaign-management/view-campaign/edit",
+                      "documentation/campaign-management/view-campaign/delete"
+                    ]
+                  }
                 ]
               },
               {
@@ -189,14 +272,6 @@
                   "documentation/campaign-management/reports/share",
                   "documentation/campaign-management/reports/access"
                 ]
-              },
-              {
-                "group": "View Your Campaign Item",
-                "expanded": false,
-                "pages": [
-                  "documentation/campaign-management/view-campaign/edit",
-                  "documentation/campaign-management/view-campaign/delete"
-                ]
               }
             ]
           },
@@ -216,26 +291,26 @@
           {
             "group": "Settings",
             "pages": [
-                "documentation/settings/manage-profile",
-                "documentation/settings/change-password",
-                {
-                  "group": "Members Management",
-                  "expanded": false,
-                  "pages": [
-                    "documentation/settings/members-management/overview",
-                    "documentation/settings/members-management/delete"
-                  ]
-                },
-                {
-                  "group": "Brands Management",
-                  "expanded": false,
-                  "pages": [
-                    "documentation/settings/brands-management/overview",
-                    "documentation/settings/brands-management/add",
-                    "documentation/settings/brands-management/edit",
-                    "documentation/settings/brands-management/invite-member"
-                  ]
-                }
+              "documentation/settings/manage-profile",
+              "documentation/settings/change-password",
+              {
+                "group": "Members Management",
+                "expanded": false,
+                "pages": [
+                  "documentation/settings/members-management/overview",
+                  "documentation/settings/members-management/delete"
+                ]
+              },
+              {
+                "group": "Brands Management",
+                "expanded": false,
+                "pages": [
+                  "documentation/settings/brands-management/overview",
+                  "documentation/settings/brands-management/add",
+                  "documentation/settings/brands-management/edit",
+                  "documentation/settings/brands-management/invite-member"
+                ]
+              }
             ]
           }
         ]
@@ -427,6 +502,16 @@
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Release Notes",
+        "icon": "megaphone",
+        "groups": [
+          {
+            "group": "Release Notes",
+            "pages": ["release-notes/introduction"]
           }
         ]
       }
