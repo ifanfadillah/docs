@@ -1,0 +1,56 @@
+---
+title: "Ad Serving"
+---
+
+The Ad Serving API offers media owners a RESTful HTTP interface, enabling them to request ads, receive ad responses, and report proof of plays (PoPs).
+
+## Request
+
+Call the API to request an ad. This informs LynxSSP that an ad space is available and ready to be filled.
+
+```
+POST https://ad.playlog.io/api/v1/ad/request?format=json
+```
+
+For development or testing purposes, please refer to our Sandbox Environment Documentation ([See Sandbox Environment ↗](/documentation/inventory/dooh/screens/api-integration/sandbox-environment)) to simulate API requests without affecting production data.
+
+### Request Header
+
+| **Name** | **Type** | **Required** | **Description**           | **Note**           |
+| :------- | :------- | :----------- | :------------------------ | :----------------- |
+| ```Lynx-Key``` | string   | true         | Unique authentication key | [See Authentication](/documentation/inventory/dooh/screens/api-integration/authentication) |
+
+### Request Body Parameter
+
+| **Name**  | **Type** | **Required** | **Description**                                                                         | **Note**                                                                                                               |
+| :-------- | :------- | :----------- | :-------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| ```venue_id```  | string   | required     | Defines which venue is doing the ad request. This should be your ID in your system.     | Will be returned in both JSON body and the VAST tag wrapper as an extension.<br />See the response body section below. |
+| ```screen_id``` | string   | required     | Additional information to identify which screen in the venue is sending the ad request. | Will be returned in both JSON body and the VAST tag wrapper as an extension.<br />See the response body section below. |
+| ```play_time``` | Int64    | required     | Time in the future at which you expect to show the ad in UTC epoch seconds.             | The ad request and display time should be as close as possible.                                                        |
+
+### Request Query Parameter
+
+| **Name** | **Type** | **Required** | **Description**                                                                        | **Note**   |
+| :------- | :------- | :----------- | :------------------------------------------------------------------------------------- | :--------- |
+| ```format```  | string   | required     | When format=xml is used, the API returns the vast tag response in XML instead of JSON. | json / xml |
+
+### Request Body
+
+| **Name**              | **Type** | **Required** | **Description**                                                                            | **Note** |
+| :-------------------- | :------- | :----------- | :----------------------------------------------------------------------------------------- | :------- |
+| ```vast_tag```              | text     | required     | Vast tag to be played on the specified screen and time                                     |          |
+| ```ad_request_uuid```       | string   | required     | Ad Request UUID to be used for Proof of Play identifier                                    |          |
+| ```ad_request_expired_at``` | Int64    | required     | Time in the future at which you the ad is no longer feasible to play in UTC epoch seconds. |          |
+| ```venue_id```              | string   | required     | venue_id that is sent in the ad request.                                                   |          |
+| ```screen_id```             | string   | required     | screen_id that is sent is the ad request.                                                  |          |
+
+<Warning>
+      The VAST tag includes both tracking event URLs and an impression URL. These URLs **must be triggered (fired)** by your player in order for impressions and tracking events to be properly recorded on our side.
+</Warning>
+
+## Empty Response
+
+**HTTP Status Code**: ```204 No Content```
+In some scenarios, the ad request endpoint may return a successful response with no body content. This typically indicates that: 
+- The request was valid and processed successfully.
+- However, there are no ads to return based on the given parameters or request context.

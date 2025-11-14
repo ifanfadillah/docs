@@ -1,0 +1,57 @@
+---
+title: "Sandbox Environment"
+---
+
+The sandbox environment allows you to test API integrations without affecting production data. It mimics the production environment but uses separate data and endpoints.
+
+## Sandbox Base URL
+Please use this base URL for development: https://sandbox-ad.playlog.io
+
+## Sandbox Key
+- **Authentication:** Use ```api_key: f9a3c4b7e2d84f85b3a2a1e3c9f071ac```
+- **Venue ID:** Use ```venue_id : venue1234```
+- **Data:** Sandbox data is isolated and does not impact production.
+
+### Example Request
+```
+POST /ad/request HTTP/1.1
+
+Host: sandbox-ad.playlog.io
+
+Lynx-Key: YOUR_API_KEY
+
+Content-Type: application/json
+
+{
+
+ "venue_id": "any-venue-id"
+
+ "screen_id": "any-screen-id",
+
+ "play_time": 1682448000
+
+}
+```
+
+### Example Response
+```
+{
+
+   "status": 200,
+
+   "data": {
+
+       "vast_tag": "<VAST version='2.0'><Ad id='ngfrhfjof-1748356156557'><Wrapper><AdSystem version='1.0'>Lynx AdSystem</AdSystem><VASTAdTagURI><![CDATA[https://sandbox-ad.playlog.io/api/v1/ad/vast/ngfrhfjof-1748356156557]]></VASTAdTagURI><Impression><![CDATA[https://sandbox-ad.playlog.io/api/v1/ad/callback/?ad_request_uuid=ngfrhfjof-1748356156557]]></Impression><Creatives><Creative><Linear><TrackingEvents><Tracking event='start'><![CDATA[https://sandbox-ad.playlog.io/api/v1/ad/tracking/video/?ad_request_uuid=ngfrhfjof-1748356156557&event=start]]></Tracking><Tracking event='firstQuartile'><![CDATA[https://sandbox-ad.playlog.io/api/v1/ad/tracking/video/?ad_request_uuid=ngfrhfjof-1748356156557&event=firstQuartile]]></Tracking><Tracking event='midpoint'><![CDATA[https://sandbox-ad.playlog.io/api/v1/ad/tracking/video/?ad_request_uuid=ngfrhfjof-1748356156557&event=midpoint]]></Tracking><Tracking event='thirdQuartile'><![CDATA[https://sandbox-ad.playlog.io/api/v1/ad/tracking/video/?ad_request_uuid=ngfrhfjof-1748356156557&event=thirdQuartile]]></Tracking><Tracking event='complete'><![CDATA[https://sandbox-ad.playlog.io/api/v1/ad/tracking/video/?ad_request_uuid=ngfrhfjof-1748356156557&event=complete]]></Tracking></TrackingEvents></Linear></Creative></Creatives></Wrapper></Ad><Extension type='custom-meta'><venue_id><![CDATA[venue1234]]></venue_id><screen_id><![CDATA[Test12345]]></screen_id></Extension></VAST>",
+
+       "ad_request_uuid": "ngfrhfjof-1748356156557",
+
+       "ad_request_expired_at": 1748477576,
+
+       "venue_id": "venue1234",
+
+       "screen_id": "Test12345"
+
+   }
+
+}
+```

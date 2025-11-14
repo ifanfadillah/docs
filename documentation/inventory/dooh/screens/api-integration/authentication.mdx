@@ -1,0 +1,27 @@
+---
+title: "Authentication"
+---
+
+To access our API endpoints, you need a unique ```api_key``` ,  which serves as your authentication credential. This key verifies your identity and grants you access to the platform's features.
+
+## Getting Your API Key
+
+You can obtaion your ```api_key``` from the User Settings page. This page also provides the API base URLs required for integration.
+
+<Info>
+      Your ```api_key``` is private and should never be shared with third parties. Treat it like a password to prevent unauthorized access to your account.
+</Info>
+
+For development and testing purpose, you can use API Key provided in ([See Sandbox Environment ↗](/documentation/inventory/dooh/screens/api-integration/sandbox-environment)).
+
+## Using Your API Key
+
+To authenticate your requests, include your ```api_key``` in the ```Lynx-Key``` HTTP header.
+
+### Example Request
+
+```
+GET /adrequest HTTP/1.1  
+Host: api.example.com  
+Lynx-Key: YOUR_API_KEY
+```

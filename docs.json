@@ -71,8 +71,8 @@
                             "group": "Lynx CMS (Screen App)",
                             "expanded": false,
                             "pages": [
-                              "documentation/inventory/dooh/screens/screen-app/installation-windows",
-                              "documentation/inventory/dooh/screens/screen-app/installationandroid",
+                              "documentation/inventory/dooh/screens/screen-app/windows-installation",
+                              "documentation/inventory/dooh/screens/screen-app/android-installation",
                               "documentation/inventory/dooh/screens/screen-app/connection"
                             ]
                           },
@@ -80,30 +80,24 @@
                             "group": "HTML5",
                             "expanded": false,
                             "pages": [
-                              "documentation/inventory/dooh/screens/html5/connection"
+                              "documentation/inventory/dooh/screens/html5/connection",
+                              "documentation/inventory/dooh/screens/html5/check-connection"
                             ]
                           },
                           {
                             "group": "API Integration",
                             "expanded": false,
                             "pages": [
-                              "documentation/inventory/dooh/screens/api/connection",
-                              "documentation/inventory/dooh/screens/api/authentication",
-                              "documentation/inventory/dooh/screens/api/ad-serving",
-                              "documentation/inventory/dooh/screens/api/sandbox-environment"
+                              "documentation/inventory/dooh/screens/api-integration/connection",
+                              "documentation/inventory/dooh/screens/api-integration/authentication",
+                              "documentation/inventory/dooh/screens/api-integration/ad-serving",
+                              "documentation/inventory/dooh/screens/api-integration/sandbox-environment"
                             ]
                           }
                         ]
                       },
                       "documentation/inventory/dooh/screens/status",
-                      {
-                        "group": "View Screen Connection",
-                        "expanded": false,
-                        "pages": [
-                          "documentation/inventory/dooh/screens/check-connection",
-                          "documentation/inventory/dooh/screens/disconnect-player"
-                        ]
-                      }
+                      "documentation/inventory/dooh/screens/disconnect-player"
                     ]
                   },
                   {
