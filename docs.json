@@ -47,7 +47,7 @@
               "documentation/inventory/specification-type-and-category",
               {
                 "group": "DOOH",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Add New DOOH Inventory",
@@ -71,8 +71,14 @@
                             "group": "Lynx CMS (Screen App)",
                             "expanded": false,
                             "pages": [
+                              {
+                                "group": "Installation",
+                                "expanded": false,
+                                "pages": [
                               "documentation/inventory/dooh/screens/screen-app/windows-installation",
-                              "documentation/inventory/dooh/screens/screen-app/android-installation",
+                              "documentation/inventory/dooh/screens/screen-app/android-installation"
+                                ]
+                              },
                               "documentation/inventory/dooh/screens/screen-app/connection"
                             ]
                           },
@@ -114,12 +120,17 @@
               },
               {
                 "group": "OOH",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   {
-                    "group": "Create a OOH Inventory",
+                    "group": "Add New OOH Inventory",
                     "expanded": false,
-                    "pages": ["documentation/inventory/ooh/create"]
+                    "pages": [
+                      "documentation/inventory/ooh/add/how-to-add",
+                      "documentation/inventory/ooh/add/roadside",
+                      "documentation/inventory/ooh/add/place-based",
+                      "documentation/inventory/ooh/add/fleet"
+                    ]
                   },
                   "documentation/inventory/ooh/occupancy-rate"
                 ]
@@ -136,9 +147,8 @@
                 "group": "Geofence",
                 "expanded": false,
                 "pages": [
-                  "documentation/inventory/geofence/create",
-                  "documentation/inventory/geofence/edit",
-                  "documentation/inventory/geofence/delete"
+                  "documentation/inventory/geofence/overview",
+                  "documentation/inventory/geofence/create"
                 ]
               },
               "documentation/inventory/schedule"
