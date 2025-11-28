@@ -324,29 +324,81 @@
         "icon": "book-open",
         "groups": [
           {
-            "group": "USER GUIDELINE",
+            "group": "User Guideline",
             "pages": ["guideline/introduction"]
           },
           {
-            "group": "GENERATE CAMPAIGN REPORT",
+            "group": "Generate Campaign Report",
             "pages": [
               "guideline/generate-report/getting-started",
               {
-                "group": "Creating a Inventory",
+                "group": "Add New Inventory",
                 "expanded": false,
                 "pages": [
                   {
                     "group": "DOOH",
                     "expanded": false,
                     "pages": [
-                      "guideline/generate-report/create-inventory/dooh/create"
+                      "guideline/generate-report/create-inventory/dooh/roadside",
+                      "guideline/generate-report/create-inventory/dooh/place-based",
+                      "guideline/generate-report/create-inventory/dooh/fleet"
                     ]
                   },
                   {
                     "group": "OOH",
                     "expanded": false,
                     "pages": [
-                      "guideline/generate-report/create-inventory/ooh/create"
+                      "guideline/generate-report/create-inventory/ooh/roadside",
+                      "guideline/generate-report/create-inventory/ooh/place-based",
+                      "guideline/generate-report/create-inventory/ooh/fleet"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Create a Campaign",
+                "expanded": true,
+                "pages": [
+                  "guideline/generate-report/create-campaign/create/how-to-create",
+                  "guideline/generate-report/create-campaign/create/campaign-information",
+                  {
+                    "group": "Media Plan",
+                    "expanded": false,
+                    "pages": [
+                      "guideline/generate-report/create-campaign/create/media-plan/create",
+                      {
+                        "group": "Schedules",
+                        "expanded": false,
+                        "pages": [
+                          "guideline/generate-report/create-campaign/create/media-plan/schedules/edit"
+                        ]
+                      },
+                      {
+                        "group": "Inventories",
+                        "expanded": false,
+                        "pages": [
+                          "guideline/generate-report/create-campaign/create/media-plan/inventories/select",
+                          "guideline/generate-report/create-campaign/create/media-plan/inventories/remove"
+                        ]
+                      },
+                      "guideline/generate-report/create-campaign/create/media-plan/generate-report",
+                      "guideline/generate-report/create-campaign/create/media-plan/launch",
+                      {
+                        "group": "Ad Measurement",
+                        "expanded": false,
+                        "pages": [
+                          "guideline/generate-report/create-campaign/create/media-plan/ad-measurement/select",
+                          "guideline/generate-report/create-campaign/create/media-plan/ad-measurement/version"
+                        ]
+                      },
+                      {
+                        "group": "Proof of Play",
+                        "expanded": false,
+                        "pages": [
+                          "guideline/generate-report/create-campaign/create/media-plan/proof-of-play/add",
+                          "guideline/generate-report/create-campaign/create/media-plan/proof-of-play/delete"
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -490,21 +542,26 @@
           }
         ]
       },
-      {
+  {
         "tab": "API Reference",
         "icon": "code",
         "groups": [
           {
             "group": "API Documentation",
-            "pages": ["api-reference/introduction"]
+            "pages": [
+              "api-reference/ad-serving/introduction",
+              "api-reference/ad-serving/authentication",
+              "api-reference/ad-serving/sandbox",
+              "api-reference/ad-serving/production",
+              "api-reference/ad-serving/uat",
+              "api-reference/ad-serving/monitoring"
+            ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Playground",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/ad-serving/ad-request"
+              
             ]
           }
         ]
