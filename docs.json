@@ -534,14 +534,10 @@
             ]
           },
           {
-            "group": "DSP Platform",
-            "pages": ["programmatic/dsp-platform"]
-          },
-          {
             "group": "Resource & Support",
             "pages": [
-              "programmatic/resource-and-support/frequently-asked-question",
-              "programmatic/resource-and-support/contact-us"
+              "programmatic/dsp-platform",
+              "programmatic/resource-and-support/frequently-asked-question"
             ]
           }
         ]
