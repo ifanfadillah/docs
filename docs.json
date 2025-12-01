@@ -75,8 +75,8 @@
                                 "group": "Installation",
                                 "expanded": false,
                                 "pages": [
-                              "documentation/inventory/dooh/screens/screen-app/windows-installation",
-                              "documentation/inventory/dooh/screens/screen-app/android-installation"
+                                  "documentation/inventory/dooh/screens/screen-app/windows-installation",
+                                  "documentation/inventory/dooh/screens/screen-app/android-installation"
                                 ]
                               },
                               "documentation/inventory/dooh/screens/screen-app/connection"
@@ -403,30 +403,11 @@
                   }
                 ]
               },
-              "guideline/generate-report/create-campaign/create",
-              {
-                "group": "Creating a Media Plan",
-                "pages": [
-                  "guideline/generate-report/create-media-plan/create-media-plan",
-                  {
-                    "group": "Schedule",
-                    "expanded": false,
-                    "pages": [
-                      "guideline/generate-report/create-media-plan/schedule/schedule",
-                      "guideline/generate-report/create-media-plan/schedule/edit"
-                    ]
-                  },
-                  "guideline/generate-report/create-media-plan/select-inventories",
-                  "guideline/generate-report/create-media-plan/generate-report",
-                  "guideline/generate-report/create-media-plan/launch-media-plan",
-                  "guideline/generate-report/create-media-plan/ad-measurement"
-                ]
-              },
               {
                 "group": "Reports",
                 "expanded": false,
                 "pages": [
-                  "guideline/generate-report/reports/reports",
+                  "guideline/generate-report/reports/overview",
                   "guideline/generate-report/reports/download",
                   "guideline/generate-report/reports/share",
                   "guideline/generate-report/reports/access"
@@ -435,20 +416,35 @@
             ]
           },
           {
-            "group": "SCREEN CONNECTION",
+            "group": "Screen Connection",
             "pages": [
               {
-                "group": "Screen App",
+                "group": "Lynx CMS (Screen App)",
                 "expanded": false,
                 "pages": [
                   "guideline/screen-connection/screen-app/getting-started",
-                  "guideline/screen-connection/screen-app/create-dooh-inventory/create",
+                  {
+                    "group": "Add New DOOH Inventory",
+                    "expanded": false,
+                    "pages": [
+                      "guideline/screen-connection/screen-app/create-inventory/roadside",
+                      "guideline/screen-connection/screen-app/create-inventory/place-based",
+                      "guideline/screen-connection/screen-app/create-inventory/fleet"
+                    ]
+                  },
                   {
                     "group": "Connect to Screen",
                     "expanded": false,
                     "pages": [
-                      "guideline/screen-connection/screen-app/connect-to-screen/connect-to-screen",
-                      "guideline/screen-connection/screen-app/connect-to-screen/installation-windows",
+                      "guideline/screen-connection/screen-app/connect-to-screen/how-to-connect",
+                      {
+                        "group": "Installation",
+                        "expanded": false,
+                        "pages": [
+                          "guideline/screen-connection/screen-app/connect-to-screen/install/windows-installation",
+                          "guideline/screen-connection/screen-app/connect-to-screen/install/android-installation"
+                        ]
+                      },
                       "guideline/screen-connection/screen-app/connect-to-screen/connection"
                     ]
                   },
@@ -462,12 +458,20 @@
                 "expanded": false,
                 "pages": [
                   "guideline/screen-connection/html/getting-started",
-                  "guideline/screen-connection/html/create-dooh-inventory/create",
+{
+                    "group": "Add New DOOH Inventory",
+                    "expanded": false,
+                    "pages": [
+                      "guideline/screen-connection/html/create-inventory/roadside",
+                      "guideline/screen-connection/html/create-inventory/place-based",
+                      "guideline/screen-connection/html/create-inventory/fleet"
+                    ]
+                  },
                   {
                     "group": "Connect to Screen",
                     "expanded": false,
                     "pages": [
-                      "guideline/screen-connection/html/connect-to-screen/connect-to-screen",
+                      "guideline/screen-connection/html/connect-to-screen/how-to-connect",
                       "guideline/screen-connection/html/connect-to-screen/connection"
                     ]
                   },
@@ -485,17 +489,17 @@
         "icon": "tv",
         "groups": [
           {
-            "group": "PROGRAMMATIC",
+            "group": "Programmatic",
             "pages": ["programmatic/introduction"]
           },
           {
-            "group": "FEATURES",
+            "group": "Features",
             "pages": [
               {
                 "group": "Deal Management",
                 "expanded": false,
                 "pages": [
-                  "programmatic/deal-management/deal-management",
+                  "programmatic/deal-management/overview",
                   "programmatic/deal-management/deal-type",
                   "programmatic/deal-management/deal-status",
                   {
@@ -530,11 +534,11 @@
             ]
           },
           {
-            "group": "DSP PLATFORM",
+            "group": "DSP Platform",
             "pages": ["programmatic/dsp-platform"]
           },
           {
-            "group": "RESOURCE & SUPPORT",
+            "group": "Resource & Support",
             "pages": [
               "programmatic/resource-and-support/frequently-asked-question",
               "programmatic/resource-and-support/contact-us"
@@ -542,7 +546,7 @@
           }
         ]
       },
-  {
+      {
         "tab": "API Reference",
         "icon": "code",
         "groups": [
@@ -559,20 +563,7 @@
           },
           {
             "group": "Playground",
-            "pages": [
-              "api-reference/ad-serving/ad-request"
-              
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Release Notes",
-        "icon": "megaphone",
-        "groups": [
-          {
-            "group": "Release Notes",
-            "pages": ["release-notes/introduction"]
+            "pages": ["api-reference/ad-serving/ad-request"]
           }
         ]
       }
