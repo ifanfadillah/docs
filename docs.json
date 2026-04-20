@@ -75,7 +75,10 @@
           "getting-started",
           {
             "group": "Access to Playlog",
-            "pages": []
+            "pages": [
+              "request-account",
+              "login"
+            ]
           }
         ]
       },
