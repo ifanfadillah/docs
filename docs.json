@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Playlog Documentation",
   "colors": {
     "primary": "#004DA0",
     "light": "#E5E6ED",
@@ -12,7 +12,7 @@
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [
+        "pages": [
           {
             "group": "Getting started",
             "pages": [
@@ -44,7 +44,8 @@
               "ai-tools/claude-code",
               "ai-tools/windsurf"
             ]
-          }
+          },
+          "untitled-page"
         ]
       },
       {
@@ -66,22 +67,31 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Documentation",
+        "icon": "newspaper",
+        "pages": [
+          "getting-started",
+          {
+            "group": "Access to Playlog",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "tab": "Planning Tools",
+        "icon": "map-location-dot"
+      },
+      {
+        "tab": "Insight",
+        "icon": "bullseye-arrow"
+      },
+      {
+        "tab": "Campaign Report",
+        "icon": "chart-mixed"
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/logo-blue.svg",
