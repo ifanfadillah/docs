@@ -77,6 +77,24 @@
             ]
           },
           {
+            "group": "Media Measurement",
+            "pages": [
+              "measurement",
+              {
+                "group": "Metrics",
+                "pages": [
+                  "fr",
+                  "frequency",
+                  "impression"
+                ]
+              },
+              "primary-data",
+              "secondary-data",
+              "methodology",
+              "untitled-page"
+            ]
+          },
+          {
             "group": "Modules",
             "pages": [
               "essentials/navigation",
