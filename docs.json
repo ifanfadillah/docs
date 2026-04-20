@@ -77,6 +77,15 @@
             ]
           },
           {
+            "group": "Modules",
+            "pages": [
+              "essentials/navigation",
+              "essentials/settings",
+              "essentials/settings-copied-1",
+              "essentials/settings-copied-2"
+            ]
+          },
+          {
             "group": "Media Measurement",
             "pages": [
               "measurement",
@@ -92,15 +101,6 @@
               "secondary-data",
               "methodology",
               "untitled-page"
-            ]
-          },
-          {
-            "group": "Modules",
-            "pages": [
-              "essentials/navigation",
-              "essentials/settings",
-              "essentials/settings-copied-1",
-              "essentials/settings-copied-2"
             ]
           },
           {
