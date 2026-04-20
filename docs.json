@@ -88,18 +88,23 @@
           {
             "group": "Settings",
             "pages": [
-              {
-                "group": "Manage Profile",
-                "pages": []
-              },
+              "manage-profile",
               "change-password",
               {
                 "group": "Members Management",
-                "pages": []
+                "pages": [
+                  "overview",
+                  "delete-a-member"
+                ]
               },
               {
                 "group": "Brands Management",
-                "pages": []
+                "pages": [
+                  "access",
+                  "add-brand",
+                  "edit-brand",
+                  "delete-brand"
+                ]
               }
             ]
           },
