@@ -7,7 +7,7 @@
     "light": "#E5E6ED",
     "dark": "#004DA0"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/playlog-favicon.svg",
   "navigation": {
     "tabs": [
       {
