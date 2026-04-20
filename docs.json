@@ -41,8 +41,7 @@
               "ai-tools/claude-code",
               "ai-tools/windsurf"
             ]
-          },
-          "untitled-page"
+          }
         ]
       },
       {
@@ -81,7 +80,21 @@
             "group": "Modules",
             "pages": [
               "essentials/navigation",
-              "essentials/settings"
+              "essentials/settings",
+              "essentials/settings-copied-1",
+              "essentials/settings-copied-2"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": []
+          },
+          {
+            "group": "Resource",
+            "pages": [
+              "glosary",
+              "frequently-answer-questions-fa-q",
+              "support"
             ]
           }
         ]
