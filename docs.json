@@ -87,7 +87,21 @@
           },
           {
             "group": "Settings",
-            "pages": []
+            "pages": [
+              {
+                "group": "Manage Profile",
+                "pages": []
+              },
+              "change-password",
+              {
+                "group": "Members Management",
+                "pages": []
+              },
+              {
+                "group": "Brands Management",
+                "pages": []
+              }
+            ]
           },
           {
             "group": "Resource",
