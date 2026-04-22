@@ -1,4 +1,49 @@
 ---
-title: 'Primary Data'
+title: "Primary Data"
 ---
 
+## **The Global Landscape of Primary Data in OOH Measurement**
+
+In the global Out-of-Home (OOH) advertising industry, "Primary Data" refers to the direct, active signals collected to measure real-world audience movement and behavior around physical ad placements. The industry utilizes a wide spectrum of data sources to achieve this, balancing scale, accuracy, and privacy.
+
+Beyond the core methods, the broader OOH ecosystem often experiments with various sources, such as:
+
+| **Category** | **Data Collection Methodology** | **Accuracy** | **Precision** | **Scale** | **Retargeting** |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| **Telco** | Every time a consumer’s phone is connected to the network (any text, call, or internet use) | Fair | Good | Dependent on the Provider | Yes |
+| **Mobility Data (GPS)** | From apps where consumers opt in to allow access to their location information | Good | Good to Excellent (Signal Dependent) | Dependent on SDK installs | Yes |
+| **Bid Stream** | When a consumer is using a mobile app with location services turned on while seeing ad ad-in-app | Poor | None | Good | Yes |
+| **Beacon** | Uses bluetooth technology to scan devices within 10-100 feet; users need to have BT turned and visible | Dependent on implementation | Dependent on implementation | Dependent on SDK installs | No |
+| **Survey** | User-based self disclosures against desired outcomes | Good | Good | Poor | No |
+| **Point-of-Sales** | Retailer specific data logs to identify conversions | Excellent | Excellent | Fair | No |
+| **Computer Vision** | Uses anonymous vision algorithms to analyze users passing an OOH asset | Good to Excellent | Good | Dependent on sensor installs | No |
+
+---
+
+## Playlog’s Specific Primary Data Sources
+
+To ensure high fidelity, accuracy, and actionable insights, Playlog filters out the "noise" and focuses its measurement methodology on three highly reliable primary data sources. By utilizing these specific channels, Playlog maximizes precision for audience measurement, impression counting, and qualitative validation:
+
+### 1. Mobility Data (GPS)
+
+This is the core foundation for tracking audience movement and mapping the Contact Zone.
+
+- **Methodology:** Data is collected from mobile applications where consumers have explicitly opted in to allow access to their location information.
+- **Data Quality:** It offers **Good** accuracy and **Good to Excellent** precision, though it is dependent on the GPS signal strength in the specific geographic area.
+- **Scale & Retargeting:** The scale depends on the volume of SDK (Software Development Kit) installations across partner apps. Crucially, this data allows for **Retargeting**, meaning advertisers can serve follow-up digital ads on mobile devices to the exact audience that walked or drove past the OOH asset.
+
+### 2. Computer Vision
+
+This method is used for pure, hardware-based impression counting without relying on mobile signals.
+
+- **Methodology:** Utilizes anonymous vision algorithms (via optical sensors or cameras near the screen) to physically count and analyze users or vehicles passing an OOH asset in real-time.
+- **Data Quality:** Provides **Good to Excellent** accuracy and **Good** precision. It is highly reliable because it records actual physical presence rather than relying on a digital device ping.
+- **Scale & Retargeting:** The scale is entirely dependent on how many physical sensors are installed at the inventory locations. Because the data is strictly anonymous and does not capture mobile device IDs, retargeting is **not** possible with this method.
+
+### 3. Survey
+
+While GPS and Computer Vision handle the quantitative data (how many people), surveys handle the qualitative data (what people remember).
+
+- **Methodology:** Captures user-based self-disclosures against desired outcomes. This typically involves brand lift studies or recall surveys asking a sample audience if they remember seeing a specific OOH campaign.
+- **Data Quality:** Delivers **Good** accuracy and **Good** precision because the data comes directly and consciously from the consumer's feedback.
+- **Scale & Retargeting:** The scale is generally considered **Poor** (or limited) because it requires active user participation and is conducted on a sample group rather than the total passing audience. Retargeting is **not** applicable here, as it is used for post-campaign validation rather than continuous tracking.

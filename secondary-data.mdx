@@ -1,4 +1,30 @@
 ---
-title: 'Secondary Data'
+title: "Secondary Data"
 ---
 
+To build a comprehensive and highly accurate measurement model, Playlog leverages several key sources of secondary data:
+
+### 1. MAID (Mobile Advertising ID) Databases
+
+A Mobile Advertising ID (MAID) is a privacy-compliant, anonymized, and user-resettable identifier assigned to a mobile device (such as Apple's IDFA or Android's AAID) (see [Mobile advertising IDs](https://support.google.com/admanager/answer/6274238?hl=en)).
+
+In OOH measurement, third-party MAID databases act as the critical bridge between raw location data and rich audience insights.
+
+- **Behavioral Profiling:** By analyzing the historical, aggregated movement patterns associated with a set of MAIDs, the system can predict key audience attributes. For example, if a device frequently stays at a specific residential area at night and a business district during the day, the system can determine the user's estimated **Home and Office locations**.
+- **Socio-Economic Status (SES):** Combining these historical movement patterns with property value data or neighborhood profiles allows the system to accurately predict the SES of the audience exposed to the billboard.
+- **Privacy-First:** Because MAIDs are anonymized and do not contain personal identifiable information (PII) like names or phone numbers, they provide deep behavioral insights while strictly maintaining consumer privacy.
+
+### 2. Census and Demographic Data
+
+Government and institutional census data provide the macro-level baseline for the population in any given area.
+
+- **Population Baselines:** This data includes total population density, age distribution, gender breakdown, and average household income for specific cities, districts, or zip codes.
+- **Enrichment:** When primary mobility data detects an audience in a specific Contact Zone, census data is used as an overlay to help validate the demographic makeup of that audience, ensuring the projected "Audience Profile" aligns with the reality of the surrounding neighborhood.
+
+### 3. Points of Interest (POI) Context
+
+Contextual mapping data provides the environmental "why" behind the audience's movement.
+
+- By mapping nearby POIs, such as shopping malls, universities, airports, or hospitals, the system can infer the intent and mindset of the audience in the Contact Zone. An audience passing a billboard near an airport has a very different profile and intent than one passing a billboard in a residential suburb.
+
+**Bringing It Together for Playlog** By combining the real-time signals of Primary Data (GPS, Computer Vision) with the deep, contextual layers of Secondary Data (MAID profiles, Census, ADT), Playlog is able to power its proprietary algorithms. This fusion is what ultimately generates the precise **Audience Profiles** and accurate **Impression (OTS)** for OOH.

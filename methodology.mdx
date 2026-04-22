@@ -2,4 +2,119 @@
 title: "Methodology"
 ---
 
-## Step 1 : Inventory Audit
+## Step 1: Inventory Audit
+
+The Inventory Audit is the essential first step in the pre-methodology framework. It involves thoroughly identifying the physical specifications and geospatial context of the advertising asset. By establishing these exact parameters, the system can accurately model the screen's specific viewing zone.
+
+![Inventory Audit 1](/images/inventory-audit-1.png)
+
+The data collected during this audit is divided into two main categories:
+
+### Media Level Data
+
+This data focuses on the physical characteristics of the screen itself:
+
+- **Inventory Type:** The specific classification of the asset (e.g., Digital Billboard, Conventional Billboard, etc).
+- **Orientation:** The layout of the screen, typically categorized as landscape or portrait.
+- **Slots:** The total number of advertisement slots available in the screen's content loop.
+- **Side of View:** The positioning of the screen relative to the audience's approach.
+- **Panel Size:** The physical dimensions (width and length) of the active display area.
+- **Panel Height:** The vertical elevation of the screen from ground level, which significantly impacts the audience's line of sight.
+
+### Location & Geospatial Data
+
+This data defines exactly where the screen is situated in the real world and its relationship to audience traffic flow:
+
+- **Latitude, Longitude:** The exact GPS coordinates of the physical structure.
+- **Direction Facing:** The compass direction the front of the screen is pointing toward.
+- **Point of Interest (POI):** Significant nearby locations (such as malls or transit hubs) that help identify the surrounding environment (see Point of Interest)
+- **Distance to Road:** The measurement from the physical structure to the edge of the roadway.
+- **Road Network:** The classification of the road the screen targets (e.g., Toll Road, Arterial Road, Local Street).
+- **Angle to Road:** The exact degree at which the screen faces oncoming traffic, which determines how directly the audience can view the advertisement.
+
+---
+
+## Step 2: Maximum Nothing Distance
+
+The Maximum Noting Distance is defined as the farthest distance at which a person can effectively perceive and comprehend the content displayed on a billboard.
+
+To ensure absolute precision, this distance is established using a rigorous two-step approach: it is calculated mathematically and then strictly verified through a **field survey** to account for real-world environmental conditions (such as inventories that are positioned parallel to roads).
+
+### Calculated Formula
+
+The theoretical maximum noting distance relies on the physical dimensions of the screen and the viewer's angle of sight. The core formula used to determine this is:
+
+![Maximum Nothing Distance](/images/maximum-nothing-distance.png)
+
+**Key Variables in the Calculation:**
+
+- **Height (**$y$**):** The elevation of the billboard above the ground.
+- **Width & Length:** The physical dimensions used to determine the diagonal size of the billboard frame.
+- **Angle of Elevation (**$\theta$**):** The angle from the viewer's eye level (line of sight, $z$) to the screen.
+
+<Info>
+  **Example Calculation:**
+
+  For instance, a **2m x 3m frame** that is positioned **8m high** has a calculated maximum noting distance of **284m**.
+</Info>
+
+### Impact of Dimensions and Elevation
+
+The maximum viewing distance scales dynamically based on the billboard's proportions. As a general rule, a larger diagonal screen size combined with an optimal height placement will significantly extend the distance from which the audience can clearly see and understand the advertisement.
+
+---
+
+## Step 3: Maximum Nothing Distance
+
+The Contact Zone is the specific geographic area where a moving audience whether in a vehicle or walking has a clear, unobstructed line of sight to an Out-of-Home (OOH) display.
+
+While the "Maximum Noting Distance" (Step 2) tells us _how far away_ an advertisement can be seen, the Contact Zone tells us the exact physical boundaries of _where_ it can be seen based on human peripheral vision and reading angles. This step is critical because simply being close to a billboard does not guarantee that a person can actually read it (for example, if they are driving behind the billboard or at an extreme side angle).
+
+<img
+  src="/images/image1.gif"
+  alt="Image1"
+  className="mx-auto"
+/>
+
+To accurately map this zone, we evaluate the viewer's perspective using specific angles:
+
+- **The Optimal View (70° Cone):** This is the "sweet spot" for viewability. It spans from -35° to 35° directly in front of the viewer. When an audience is within this cone, the billboard is perfectly legible without them having to turn their heads significantly.
+- **The Maximum Viewing Angle (60° Left and Right):** As the audience moves closer or passes by the screen, the viewing angle gets wider. The absolute limit for a person to comfortably read the display is 60° to their left or 60° to their right.
+- **The Non-Viewable Limit:** Any media orientation that exceeds 60 degrees from a viewer's perspective is deemed non-viewable. Impressions are strictly not counted if the audience is outside this boundary, as the angle is too sharp for the human eye to process the advertisement.
+
+By establishing this highly accurate Contact Zone, the measurement system ensures that it only captures mobility data from people who truly have an **"Opportunity to See" (OTS)** the campaign, filtering out irrelevant traffic and ensuring data integrity.
+
+---
+
+## Step 4: Visibility Index
+
+Once the Contact Zone is mapped out, the next crucial step is determining the **Visibility Index**. This metric quantifies exactly how clear and unobstructed the billboard is to an audience standing or moving _within_ that established zone.
+
+While the Contact Zone tells us where an audience _can_ theoretically see the screen, the real world is rarely perfect. The Visibility Index takes into account physical, real-world environmental factors that might block the audience's line of sight to the advertisement.
+
+![Visibility Index](/images/visibility-index.png)
+
+Various elements can obscure an OOH asset. Common examples include:
+
+- **Foliage and Trees:** As seen in the example, a tree's canopy can easily cover a large portion of a billboard, especially depending on the season.
+- **Infrastructure:** Overhead pedestrian bridges, power lines, large streetlights, or highway signs.
+- **Architecture:** Overhanging building roofs or adjacent structures that create blind spots.
+
+<Info>
+  This step ensures that the measurement data remains realistic and highly accurate. If an obstacle blocks **50%** of the screen, the system needs to acknowledge that the quality of the exposure is compromised. By applying the Visibility Index, we prevent the over-reporting of impressions that might occur if we simply counted every single car that drove past a heavily obstructed billboard.
+</Info>
+
+---
+
+## Step 5: Data Cleansing & Processing
+
+After establishing the physical parameters of the billboard like the Contact Zone and Visibility Index the system gathers raw audience mobility data. However, raw data is often messy. Step 5 is where this raw data is refined into accurate, actionable measurement metrics using proprietary algorithms and machine learning models.
+
+Once the data is clean, the system applies multi-step processing adjusted for local context to generate specific, high-value metrics. Key metrics generated in this step include:
+
+- **Dwell Time:** Calculates the exact duration a trackable person remains inside the Contact Zone. This determines how much time they actually had to view the screen.
+- **OTS (Opportunity to See):** Calculates the potential number of ads a person could have seen during their dwell time. For instance, if the screen loops an ad every 10 seconds and the person's dwell time is 30 seconds, their OTS is higher than someone driving by in 5 seconds.
+- **Traffic Pathing:** Ensures that only _incoming_ traffic is counted. If a person is traveling away from the screen or walking behind it, their data is excluded, ensuring impressions are only counted for audiences facing the advertisement.
+- **Viewable Adjusted Contact:** The total number of actual exposures to your advertisement. This takes into account the raw traffic and adjusts it based on real-world viewability (applying the Visibility Index from Step 4).
+- **Audience Profile:** Uses machine learning to predict the demographic profile of the audience based on contextual data, such as Socio-Economic Status (SES), home, and office locations.
+- **Reached Population Multipliers:** A probabilistic multiplier applied per specific area. Since not every single person's mobile device can be tracked, this multiplier safely and scientifically scales the sampled data to accurately represent the total real-world population passing the screen.
