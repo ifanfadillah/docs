@@ -38,7 +38,7 @@
               "methodology",
               "primary-data",
               "secondary-data",
-              "untitled-page"
+              "ads-verification"
             ]
           },
           {
@@ -84,7 +84,75 @@
       },
       {
         "tab": "Campaign Report",
-        "icon": "chart-mixed"
+        "icon": "chart-mixed",
+        "pages": [
+          "campaign-report",
+          {
+            "group": "Campaign",
+            "pages": [
+              "overview-1",
+              "create-campaign-1",
+              "status",
+              {
+                "group": "View Your Campaign",
+                "pages": [
+                  "edit-campaign",
+                  "delete-campaign"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Media Plan",
+            "pages": [
+              "create-media-plan",
+              "media-plan-status",
+              {
+                "group": "Inventories",
+                "pages": [
+                  "select-inventory",
+                  "remove-inventory"
+                ]
+              },
+              {
+                "group": "Proof of Play",
+                "pages": [
+                  "upload-proof-of-play",
+                  "delete-proof-of-play"
+                ]
+              },
+              {
+                "group": "Action",
+                "pages": [
+                  "launch-media-plan",
+                  "force-complete"
+                ]
+              },
+              {
+                "group": "View Your Media Plan",
+                "pages": [
+                  "edit-media-plan",
+                  "delete-media-plan"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "overview-2",
+              "download-campaign-report",
+              "share-campaign-report",
+              "access-campaign-report"
+            ]
+          },
+          {
+            "group": "Guideline",
+            "pages": [
+              "how-to-create-campaign-report"
+            ]
+          }
+        ]
       }
     ]
   },
