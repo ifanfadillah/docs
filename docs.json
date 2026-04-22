@@ -91,17 +91,9 @@
             "group": "Media Measurement",
             "pages": [
               "measurement",
-              {
-                "group": "Metrics",
-                "pages": [
-                  "fr",
-                  "frequency",
-                  "impression"
-                ]
-              },
+              "methodology",
               "primary-data",
               "secondary-data",
-              "methodology",
               "untitled-page"
             ]
           },
