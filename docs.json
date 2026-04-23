@@ -162,12 +162,7 @@
     "dark": "/logo/logo-white.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
@@ -192,5 +187,12 @@
       "instagram": "https://instagram/playlog.io",
       "linkedin": "https://www.linkedin.com/company/playlog-io/"
     }
+  },
+  "background": {
+    "image": "/images/Group518.png",
+    "decoration": "grid"
+  },
+  "appearance": {
+    "default": "light"
   }
 }
