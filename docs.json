@@ -189,8 +189,7 @@
     }
   },
   "background": {
-    "image": "/images/Group518.png",
-    "decoration": "grid"
+    "decoration": "gradient"
   },
   "appearance": {
     "default": "light"
