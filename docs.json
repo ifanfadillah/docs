@@ -146,12 +146,6 @@
               "share-campaign-report",
               "access-campaign-report"
             ]
-          },
-          {
-            "group": "Guideline",
-            "pages": [
-              "how-to-create-campaign-report"
-            ]
           }
         ]
       }
