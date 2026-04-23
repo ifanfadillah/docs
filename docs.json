@@ -105,6 +105,7 @@
           {
             "group": "Media Plan",
             "pages": [
+              "what-is-media-plan",
               "create-media-plan",
               "media-plan-status",
               {
