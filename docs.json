@@ -256,9 +256,6 @@
       "linkedin": "https://www.linkedin.com/company/playlog-io/"
     }
   },
-  "background": {
-    "image": "/images/bg-while-white.png"
-  },
   "appearance": {
     "default": "light"
   },
