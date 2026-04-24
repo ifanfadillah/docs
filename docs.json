@@ -76,7 +76,81 @@
       },
       {
         "tab": "Planning Tools",
-        "icon": "map-location-dot"
+        "icon": "map-location-dot",
+        "pages": [
+          "planning-tools",
+          {
+            "group": "Explore",
+            "pages": [
+              "what-is-explore"
+            ]
+          },
+          {
+            "group": "Map Interaction",
+            "pages": [
+              "zoom-level",
+              "pointer",
+              "point-of-interest-poi",
+              "traffic-heatmap",
+              "density-map"
+            ]
+          },
+          {
+            "group": "Inventories",
+            "pages": [
+              "what-is-inventory",
+              "specification-type-and-category",
+              "orientation",
+              {
+                "group": "Configuration",
+                "pages": [
+                  "unit",
+                  "slo",
+                  "spot"
+                ]
+              },
+              {
+                "group": "Price",
+                "pages": [
+                  "rate-card",
+                  "cpm"
+                ]
+              },
+              {
+                "group": "Performance",
+                "pages": [
+                  "demographic",
+                  "historical-data",
+                  "insight"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Shortlist / Proposal",
+            "pages": [
+              "what-is-shortlist",
+              "create-shortlist",
+              "shortlist-status",
+              {
+                "group": "Group by",
+                "pages": [
+                  "inventory-type",
+                  "city"
+                ]
+              },
+              "export-proposal",
+              "convert-to-campaign",
+              {
+                "group": "View Your Shortlist",
+                "pages": [
+                  "edit-shortlist",
+                  "delete-shortlist"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "tab": "Insight",
@@ -183,9 +257,21 @@
     }
   },
   "background": {
-    "decoration": "gradient"
+    "image": "/images/bg-while-white.png"
   },
   "appearance": {
     "default": "light"
+  },
+  "fonts": {
+    "family": "Nunito",
+    "body": {
+      "family": "Nunito"
+    }
+  },
+  "thumbnails": {
+    "background": "/images/documentation/getting-started/cover-overview.png"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
   }
 }
