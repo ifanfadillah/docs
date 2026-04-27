@@ -102,13 +102,7 @@
               "specification-type-and-category",
               "orientation",
               "screen-availability",
-              {
-                "group": "Price",
-                "pages": [
-                  "rate-card",
-                  "cpm"
-                ]
-              },
+              "price",
               {
                 "group": "Performance",
                 "pages": [
