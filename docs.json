@@ -101,14 +101,7 @@
               "what-is-inventory",
               "specification-type-and-category",
               "orientation",
-              {
-                "group": "Configuration",
-                "pages": [
-                  "unit",
-                  "slo",
-                  "spot"
-                ]
-              },
+              "screen-availability",
               {
                 "group": "Price",
                 "pages": [
