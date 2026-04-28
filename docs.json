@@ -118,6 +118,7 @@
             "pages": [
               "what-is-shortlist",
               "create-shortlist",
+              "add-inventory-to-shortlist",
               "shortlist-status",
               {
                 "group": "Group by",
