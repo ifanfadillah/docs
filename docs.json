@@ -119,14 +119,9 @@
               "what-is-shortlist",
               "create-shortlist",
               "add-inventory-to-shortlist",
+              "detail-shortlist",
+              "edit-inventory-rate-card-to-shortlist",
               "shortlist-status",
-              {
-                "group": "Group by",
-                "pages": [
-                  "inventory-type",
-                  "city"
-                ]
-              },
               "export-proposal",
               "convert-to-campaign",
               {
