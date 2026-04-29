@@ -119,7 +119,6 @@
               "what-is-shortlist",
               "create-shortlist",
               "add-inventory-to-shortlist",
-              "detail-shortlist",
               "edit-inventory-rate-card-to-shortlist",
               "shortlist-status",
               "export-proposal",
@@ -127,6 +126,7 @@
               {
                 "group": "View Your Shortlist",
                 "pages": [
+                  "detail-shortlist",
                   "edit-shortlist",
                   "delete-shortlist"
                 ]
