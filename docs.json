@@ -136,10 +136,6 @@
         ]
       },
       {
-        "tab": "Insight",
-        "icon": "bullseye-arrow"
-      },
-      {
         "tab": "Campaign Report",
         "icon": "chart-mixed",
         "pages": [
@@ -204,6 +200,32 @@
               "access-campaign-report"
             ]
           }
+        ]
+      },
+      {
+        "tab": "Insight",
+        "pages": [
+          "campaign-report-copied-1",
+          "how-to-use-insight",
+          {
+            "group": "Dimension",
+            "pages": [
+              "terminologi",
+              "taxonomy-v1",
+              "taxonomy-v2"
+            ]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "coverage",
+              "spending",
+              "performance",
+              "ads-content"
+            ]
+          },
+          "download-insigth",
+          "convert-to-shortlist"
         ]
       }
     ]
