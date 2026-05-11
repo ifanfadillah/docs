@@ -1,4 +1,107 @@
 ---
-title: 'How to use Insight'
+title: "How to use Insight"
 ---
 
+import SnippetIntro from '/snippets/snippet-intro.mdx';
+
+This guide provides a step-by-step workflow on how to navigate the Playlog Insight dashboard, from initially accessing the feature to configuring your filters and dynamically analyzing competitor data.
+
+## Step 1: Accessing Insight
+
+You can access the campaign feature by clicking the ‘**Insight**’ Menu in the Navigation Bar.
+
+![How To Use Insight 1](/images/how-to-use-insight-1.png)
+
+Then it will display the **Insight Page.**
+
+![How To Use Insight 1 2](/images/how-to-use-insight-1.2.png)
+
+When you navigate to the **Insight** menu for the first time, the dashboard will display a set of placeholder data by default.
+
+<Info>
+  You will see a banner at the top of the interface stating: _"You are showing a sample view. Apply filters to see your real competitor analysis."_
+</Info>
+
+<Info>
+  This sample view allows you to familiarize yourself with the layout, charts, and available metrics before diving into your actual competitive analysis research.
+</Info>
+
+---
+
+## Step 2: Apply Filter Menu
+
+To transition from the sample data to actionable competitive intelligence, you must configure your data parameters using the filter panel.
+
+![How To Use Insight 2](/images/how-to-use-insight-2.png)
+
+Click the **Filter** button located in the top right corner of the dashboard to open the side panel and set the following parameters:
+
+![How To Use Insight 2 2](/images/how-to-use-insight-2.2.png)
+
+<AccordionGroup>
+  <Accordion title="Date Range">
+    Select the specific start and end months for your historical analysis.
+
+    <img
+      src="/images/date-range.png"
+      alt="Date Range"
+      title="Date Range"
+      className="mx-auto"
+      style={{ width:"49%" }}
+    />
+  </Accordion>
+
+  <Accordion title="Location">
+    Narrow down the competitor data to specific Provinces, Cities, or Districts to understand regional strategies.
+  </Accordion>
+
+  <Accordion title="Dimension (Brand & Industry)">
+    This is where you select your target competitors based on the Playlog Taxonomy. You can search for and select specific individual **Brands** (e.g., specific instant noodle brands), overarching **Industries**, or narrower **Sub-Industries** (see Dimension Terminology).
+
+    ![Dimension](/images/dimension.png)
+  </Accordion>
+
+  <Accordion title="Specifications">
+    Filter the results by specific inventory types, such as filtering strictly for Digital Out-of-Home (**DOOH**) or conventional Out-of-Home (**OOH**) screens (see Specifications, Type & Category).
+  </Accordion>
+</AccordionGroup>
+
+Once your parameters are set, click **Apply Filter**. The dashboard will instantly populate with real market data based on your criteria.
+
+---
+
+## Step 3: Start Exploring the Data & Grouping
+
+With your filters applied, you can now explore the competitor analysis across the Coverage, Spending, Performance, and Ads Content tabs.
+
+![How To Use Insight 3](/images/how-to-use-insight-3.png)
+
+To manipulate how this filtered data is aggregated and visualized without resetting your main filters, utilize the **"Insights grouped by"** control bar at the top left of the dashboard. This allows you to pivot the data instantly using two distinct toggles:
+
+<Accordion title="Grouping by Dimension (The First Toggle)">
+  This setting dictates the business classification hierarchy used in the charts.
+
+  ![Grouping Dimension](/images/grouping-dimension.png)
+
+  **Industry: **Aggregates data by the highest-level market category. Metrics like "Total Brand" will change to **"Total Industry"**, providing a macro-view of the sector. 
+
+  **Sub-industry:** Provides a focused view by grouping data into specific product categories (e.g., "Instant Food"). 
+
+  **Brand:** The most specific view, grouping data by individual competitor brands for direct, head-to-head market share comparisons.
+</Accordion>
+
+<Accordion title="Grouping by Location (The Second Toggle)">
+  This setting controls the geographical granularity, updating all location-based charts (e.g., Coverage and Spending distributions).
+
+  ![Grouping Location](/images/grouping-location.png)
+
+  **Province:** Rolls up the data to a macro-regional level. Charts will update to show aggregated totals like **"Ads By Province"**. 
+
+  **City:** Provides a mid-level breakdown, displaying metrics based on specific cities or regencies. 
+
+  **District:** Offers the most granular, localized view available. Charts will update to **"Ads By District"**, allowing you to analyze footprint in highly specific neighborhoods. 
+</Accordion>
+
+<Tip>
+  **Strategic Tip:** Combine these groupings to answer specific business questions rapidly. For example, setting the grouping to **\[Industry\] in \[Province\]** provides a high-level overview of regional sector investment, while **\[Brand\] in \[District\]** pinpoints the exact hyper-local footprint of a specific competitor.
+</Tip>

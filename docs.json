@@ -68,7 +68,6 @@
             "group": "Resource",
             "pages": [
               "glosary",
-              "frequently-answer-questions-fa-q",
               "support"
             ]
           }
@@ -205,7 +204,7 @@
       {
         "tab": "Insight",
         "pages": [
-          "campaign-report-copied-1",
+          "what-is-insight",
           "how-to-use-insight",
           {
             "group": "Dimension",
