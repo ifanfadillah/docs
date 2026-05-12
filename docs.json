@@ -25,7 +25,7 @@
           {
             "group": "Modules",
             "pages": [
-              "essentials/navigation",
+              "",
               "essentials/settings",
               "essentials/settings-copied-1",
               "essentials/settings-copied-2"
@@ -135,6 +135,32 @@
         ]
       },
       {
+        "tab": "Insight",
+        "icon": "bullseye-arrow",
+        "pages": [
+          "what-is-insight",
+          "how-to-use-insight",
+          {
+            "group": "Dimension",
+            "pages": [
+              "terminologi",
+              "taxonomy",
+              "taxonomy-v2-new"
+            ]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "coverage",
+              "spending",
+              "performance",
+              "ads-content"
+            ]
+          },
+          "download-insigth"
+        ]
+      },
+      {
         "tab": "Campaign Report",
         "icon": "chart-mixed",
         "pages": [
@@ -199,31 +225,6 @@
               "access-campaign-report"
             ]
           }
-        ]
-      },
-      {
-        "tab": "Insight",
-        "pages": [
-          "what-is-insight",
-          "how-to-use-insight",
-          {
-            "group": "Dimension",
-            "pages": [
-              "terminologi",
-              "taxonomy",
-              "taxonomy-v2-new"
-            ]
-          },
-          {
-            "group": "Modules",
-            "pages": [
-              "coverage",
-              "spending",
-              "performance",
-              "ads-content"
-            ]
-          },
-          "download-insigth"
         ]
       }
     ]
