@@ -130,7 +130,12 @@
         "icon": "bullseye-arrow",
         "pages": [
           "what-is-insight",
-          "how-to-use-insight",
+          {
+            "group": "Guidelines",
+            "pages": [
+              "how-to-use-insight"
+            ]
+          },
           {
             "group": "Dimension",
             "pages": [
