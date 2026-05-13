@@ -56,10 +56,9 @@
             ]
           },
           {
-            "group": "Resource",
+            "group": "Resource & Support",
             "pages": [
-              "glosary",
-              "support"
+              "glosary"
             ]
           }
         ]
