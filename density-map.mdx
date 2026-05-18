@@ -1,4 +1,78 @@
 ---
-title: 'Density Map'
+title: "Density Map"
 ---
 
+The **Density Map** is a color-coded grid overlay that covers the map area to help you visually analyze audience density. This feature utilizes the H3 hexagonal spatial grid system to map the level of crowd or human traffic across a geographical area.
+
+The color indicators on the hexagons represent varying levels of density, ranging from _Very Sparse_ to _Crowded_.
+
+## Benefits of the Density Map for Media Planning
+
+Utilizing the Density Map provides significant strategic advantages for media buyers when planning Out-of-Home (OOH) campaigns:
+
+- **Identify Hotspots:** You can quickly scan for areas with the highest audience concentration to maximize your campaign's Reach and Impressions.
+- **Validate Inventory Locations:** If you are considering a premium-priced billboard, you can turn on the Density Map to validate whether the location is genuinely situated in a _Crowded_ or _Very Busy_ zone.
+- **Contextual Targeting:** This is highly useful whether you want to target mass audiences in dense city centers or, conversely, find quieter areas to dominate the local share of voice.
+
+---
+
+## Step-by-Step Guide to Activating the Density Map
+
+To prevent excessive data loading across the entire country, the Density Map button is only active and clickable _after_ you have filtered or selected a specific city.
+
+**Step 1:** Open the **Location** filter panel on the left side of your Explore screen.
+
+![How To Use Density Map 1](/images/how-to-use-density-map-1.png)
+
+**Step 2:** Select a specific city (e.g., _Jakarta_) from the dropdown menu.
+
+![How To Use Density Map 2](/images/how-to-use-density-map-2.png)
+
+**Step 3:** Click the **Show Billboard** button to apply the filter. The map will automatically zoom in to the selected city.
+
+![How To Use Density Map 3](/images/how-to-use-density-map-3.png)
+
+**Step 4:** Look at the floating toolbar on the right side of the map interface. Click the **Density Map icon** (the grid/mesh icon).
+
+![How To Use Density Map 4](/images/how-to-use-density-map-4.png)
+
+**Step 5:** The map will instantly display a hexagonal grid overlay with various colors indicating the density levels in that area.
+
+![How To Use Density Map 5](/images/how-to-use-density-map-5.png)
+
+---
+
+## Density Condition Indicators
+
+Once activated, the map's hexagonal grid will be highlighted in different colors. You can hover over specific hexagons to see detailed descriptions of that exact area. The density map utilizes a multi-tier legend to classify audience concentration:
+
+![Screenshot 2026 05 18 141935](/images/Screenshot-2026-05-18-141935.png)
+
+**Very Sparse:** Almost empty areas with minimal audience presence.
+
+**Sparse:** Low density, indicating light footfall and dispersed movement.
+
+**Normal:** Moderate density, showing steady footfall and normal daily activity levels.
+
+**Busy:** High density, noticeable crowd presence, and higher activity.
+
+**Very Busy:** Very high density, significant crowd concentration, and busy movement.
+
+**Crowded:** Extremely dense audience, severe crowding, indicating massive audience concentration or standstill conditions.
+
+---
+
+## Zoom Level & H3 Resolution Behavior
+
+This density mapping system is built using the **H3 Core Library** infrastructure. To ensure the map remains highly responsive and the data displayed is relevant, the size of the hexagons (H3 Resolution) adapts dynamically based on how close you zoom into the map.
+
+Here are the resolution rules applied based on the map's Zoom Level:
+
+- **Zoom Level 6 - 11:** Uses **H3 Resolution 6** (Broad area coverage, suitable for viewing density overviews at the district or city level).
+- **Zoom Level 12 - 13:** Uses **H3 Resolution 7** (Medium coverage, breaking down city density into smaller, manageable zones).
+- **Zoom Level 14 - 15:** Uses **H3 Resolution 8** (Detailed coverage, suitable for analyzing density at the neighborhood or main road segment level).
+- **Zoom Level 16 and above:** Uses **H3 Resolution 9** (Highly detailed coverage, where hexagons shrink for hyper-local analysis at a specific street or building block level).
+
+<Note>
+  **Note**: The system will continue to precisely adjust the resolution as your zoom depth changes to provide the most optimal viewing experience
+</Note>
