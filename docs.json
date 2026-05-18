@@ -40,14 +40,14 @@
               {
                 "group": "Members Management",
                 "pages": [
-                  "overview",
-                  "delete-a-member"
+                  "view-your-member",
+                  "delete-member"
                 ]
               },
               {
                 "group": "Brands Management",
                 "pages": [
-                  "access",
+                  "access-your-brand",
                   "add-brand",
                   "edit-brand",
                   "invite-member-to-brand"
@@ -58,7 +58,7 @@
           {
             "group": "Resource & Support",
             "pages": [
-              "glosary"
+              "common-terms"
             ]
           }
         ]
@@ -79,9 +79,17 @@
             "pages": [
               "zoom-level",
               "pointer",
-              "point-of-interest-poi",
               "traffic-heatmap",
-              "density-map"
+              "density-map",
+              {
+                "group": "Point of Interest",
+                "pages": [
+                  "point-of-interest-poi",
+                  "how-to-use-poi-on-explore",
+                  "poi-v1",
+                  "poi-v2-new"
+                ]
+              }
             ]
           },
           {
