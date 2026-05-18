@@ -79,8 +79,6 @@
             "pages": [
               "zoom-level",
               "pointer",
-              "traffic-heatmap",
-              "density-map",
               {
                 "group": "Point of Interest",
                 "pages": [
@@ -89,7 +87,9 @@
                   "poi-v1",
                   "poi-v2-new"
                 ]
-              }
+              },
+              "traffic-heatmap",
+              "density-map"
             ]
           },
           {
