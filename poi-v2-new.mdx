@@ -1,4 +1,505 @@
 ---
-title: 'POI v2 (New)'
+title: "POI v2 (New)"
 ---
 
+## Introducing POI V2
+
+To enable more precise and competitive inventory activation, Playlog has upgraded its Point of Interest (POI) targeting capabilities.Because POI data is foundational for core media buying functions—including inventory targeting, campaign planning, and audience segmentation—this upgrade ensures your geographic targeting is built on the most reliable spatial data available.
+
+---
+
+## Key Enhancements over V1
+
+While the legacy V1 data provided a baseline for location filtering, it faced limitations in coverage, accuracy, and taxonomy depth. POI V2 addresses these challenges by introducing:
+
+- **Enhanced Coverage & Accuracy:** A significantly expanded and consistently updated dataset that gives you a more reliable picture of the real-world environment surrounding your target screens.
+- **Granular, Multi-Level Taxonomy:** A newly restructured taxonomy that allows for much deeper, highly specific location filtering (e.g., drilling down from broad commercial zones to specific types of retail stores).
+- **Improved Data Consistency:** Resolves the quality issues inherent in web-scraped data, ensuring your inclusion and exclusion parameters hit the exact audience intent you are aiming for.
+
+<Note>
+  The standard POI filtering mechanics, Include, Exclude, and Include & Exclude, remain the same. However, the data powering these selections is now significantly more robust.
+</Note>
+
+---
+
+## POI v2 Overview
+
+| **Number of Categories** | **Number of Sub-Categories** | **Number of unique data POI V2** |
+| --- | --- | --- |
+| **57** (\+46 from v1) | **176** (\+136 from v1) | **1.355.960** (\+1.243.299 from v1) |
+
+---
+
+### POI V2 Industry
+
+| Industry ID | Industry Name |
+| :-- | :-- |
+| **01** | Bank and Financial Institution |
+| **02** | Commercial Area and Property |
+| **03** | Education |
+| **04** | Food and Beverage |
+| **05** | Government Facility and Service |
+| **06** | Hotel and Accommodation |
+| **07** | Industry and Manufacture |
+| **08** | Leisure and Entertainment |
+| **09** | Medical |
+| **10** | Security and Defense |
+| **11** | Shop and Retail |
+| **12** | Social Culture |
+| **13** | Sport |
+| **14** | Tourism |
+| **15** | Transportation and Logistics |
+| **16** | Utility and Telecommunication |
+
+**Industry Icon**
+
+![POI Industry Icon](/images/POI-Industry-Icon.png)
+
+---
+
+---
+## POI V2 Multi-Level Taxonomy
+
+The POI V2 data introduces a granular, multi-level hierarchy: **Industry** ➔ **Group** ➔ **Category**. 
+
+Below is the complete breakdown of all available categories split by their respective industries. The POI Count represents the volume of geographical data points captured for each specific location type.
+
+---
+
+### 01. Bank and Financial Institution
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **01.01** | **Bank** | 01.01.01 | ATM | 71,224 |
+| | | 01.01.02 | ATM Drive Thru | 160 |
+| | | 01.01.03 | Bank Branch | 20,546 |
+| **01.02** | **Financial Service** | 01.02.01 | Credit Union | 28 |
+| | | 01.02.02 | Pawn Shop | 347 |
+| **01.03** | **Insurance** | 01.03.01 | General Insurance Branch | 662 |
+| | | 01.03.02 | Life Insurance Branch | 488 |
+| | | 01.03.03 | Reinsurance Branch | 3 |
+| | | 01.03.04 | Social Insurance Branch | 8 |
+
+---
+
+### 02. Commercial Area and Property
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **02.01** | **Building Complex** | 02.01.01 | Industrial Park | 222 |
+| | | 02.01.02 | Office Building Complex | 449 |
+| | | 02.01.03 | Shophouse | 7,080 |
+| | | 02.01.04 | Sport Center | 449 |
+| **02.02** | **Exhibition and Hall** | 02.02.01 | Ballroom | 239 |
+| | | 02.02.02 | Convention Center | 246 |
+| | | 02.02.03 | Multipurpose Building | 890 |
+| **02.03** | **Office** | 02.03.01 | Office Building | 659 |
+| | | 02.03.02 | Office Tower | 281 |
+| **02.04** | **Residential** | 02.04.01 | Apartment | 1,950 |
+| | | 02.04.02 | Residential Area | 38,411 |
+| | | 02.04.03 | Residential Cluster | 3,975 |
+| | | 02.04.04 | Rusunami | 10 |
+| | | 02.04.05 | Rusunawa | 145 |
+| **02.05** | **Residential Rental** | 02.05.01 | Boarding House | 3,107 |
+| | | 02.05.02 | Rented House | 2 |
+
+---
+
+### 03. Education
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **03.01** | **Education Center** | 03.01.01 | Learning Center | 103 |
+| **03.02** | **Higher Education** | 03.02.01 | Academy | 606 |
+| | | 03.02.02 | College | 2,662 |
+| | | 03.02.03 | University | 4,053 |
+| **03.03** | **Library** | 03.03.01 | Public Library | 13 |
+| | | 03.03.02 | Special Library | 87 |
+| | | 03.03.03 | University Library | 1 |
+| **03.04** | **Non Formal Education**| 03.04.01 | Driving School | 290 |
+| | | 03.04.02 | Language School | 199 |
+| | | 03.04.03 | Professional Education | 152 |
+| | | 03.04.04 | Seminary | 5 |
+| | | 03.04.05 | Tutoring Agency | 455 |
+| **03.05** | **School** | 03.05.01 | Elementary School | 18,907 |
+| | | 03.05.02 | Junior High School | 36,101 |
+| | | 03.05.03 | Preschool | 33 |
+| | | 03.05.04 | Senior High School | 13,464 |
+| | | 03.05.05 | Special Education School| 93 |
+| | | 03.05.06 | Vocational High School | 13,471 |
+
+---
+
+### 04. Food and Beverage
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **04.01** | **Cafe** | 04.01.01 | Cafe | 19,426 |
+| | | 04.01.02 | Coffee Shop | 21,570 |
+| | | 04.01.03 | Ice Cream Bar | 1,053 |
+| | | 04.01.04 | Tea-Based Drink Shop | 17,145 |
+| **04.02** | **Down-home Eatery** | 04.02.01 | Herbal Drinks Store | 2,231 |
+| | | 04.02.02 | Juice Stand | 7,791 |
+| | | 04.02.03 | Warmindo | 13,366 |
+| | | 04.02.04 | Warung Kopi | 2,665 |
+| | | 04.02.05 | Warung Nasi | 9,245 |
+| | | 04.02.06 | Warung Nasi Padang | 6,205 |
+| | | 04.02.07 | Warung Tegal | 4,785 |
+| **04.03** | **Food Center** | 04.03.01 | Food Hall | 329 |
+| | | 04.03.02 | Snack Shop | 5,422 |
+| **04.04** | **Food Service** | 04.04.01 | Catering | 378 |
+| **04.05** | **Food Shop** | 04.05.01 | Cake and Bakery | 7,915 |
+| | | 04.05.02 | Fast Food | 107,327 |
+| | | 04.05.03 | Restaurant | 91,394 |
+| | | 04.05.04 | Steak House | 3,990 |
+| **04.06** | **Street Food** | 04.06.01 | Angkringan | 13,003 |
+| | | 04.06.02 | Deli | 4,277 |
+| | | 04.06.03 | Drinks Stall | 17,110 |
+| | | 04.06.04 | Street Food Stall | 273,008 |
+
+---
+
+### 05. Government Facility and Service
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **05.01** | **Government Office** | 05.01.01 | Government Hall | 34,330 |
+| | | 05.01.02 | Government Office | 13,103 |
+| | | 05.01.03 | Parliament Hall | 6 |
+| **05.02** | **International Rep** | 05.02.01 | Embassy | 24 |
+| **05.03** | **Public Service** | 05.03.01 | Immigration Office | 136 |
+| | | 05.03.02 | Religious Affairs Office| 78 |
+| | | 05.03.03 | Samsat | 1,129 |
+| | | 05.03.04 | Tax Office | 243 |
+
+---
+
+### 06. Hotel and Accommodation
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **06.01** | **Accommodation** | 06.01.01 | Guest House | 710 |
+| | | 06.01.02 | Homestay | 494 |
+| | | 06.01.03 | Villa | 1,228 |
+| **06.02** | **Hotels** | 06.02.01 | Communal Lodging | 8 |
+| | | 06.02.02 | Hotel Chain Partnership | 387 |
+
+---
+
+### 07. Industry and Manufacture
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **07.01** | **Agriculture** | 07.01.01 | Agroindustry Plantation | 13 |
+| | | 07.01.02 | Animal Husbandry | 82 |
+| | | 07.01.03 | Fish Farm | 59 |
+| | | 07.01.04 | Slaughterhouse | 50 |
+| **07.02** | **Company Office** | 07.02.01 | Small & Medium Enterprise| 55 |
+| **07.03** | **Distribution** | 07.03.01 | Cold Storage | 8 |
+| | | 07.03.02 | Distributor | 118 |
+| | | 07.03.03 | Warehouse | 159 |
+| **07.04** | **Petroleum** | 07.04.01 | Refineries | 10 |
+| **07.05** | **Production** | 07.05.01 | Factory | 257 |
+| | | 07.05.02 | Karoseri | 10 |
+| | | 07.05.03 | Rice Mill | 1 |
+
+---
+
+### 08. Leisure and Entertainment
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **08.01** | **After-hours** | 08.01.01 | Bar | 446 |
+| | | 08.01.02 | Beer Hall | 142 |
+| | | 08.01.03 | Nightclub | 116 |
+| **08.02** | **Amusement** | 08.02.01 | Amusement Center | 109 |
+| | | 08.02.02 | Cinema | 457 |
+| | | 08.02.03 | Internet Cafe | 271 |
+| | | 08.02.04 | Karaoke | 1,370 |
+| | | 08.02.05 | Kids Playground Center | 222 |
+| | | 08.02.06 | Music Studio | 366 |
+| | | 08.02.07 | Theater | 28 |
+| | | 08.02.08 | Video Game Rental | 451 |
+| **08.03** | **Leisure Facilities** | 08.03.01 | Massage | 977 |
+| | | 08.03.02 | Spa and Wellness | 433 |
+
+---
+
+### 09. Medical
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **09.01** | **Alternative Therapies**| 09.01.01 | Acupunture & Cupping Clinic| 90 |
+| | | 09.01.02 | Sangkal Putung | 21 |
+| **09.02** | **Clinic** | 09.02.01 | Dental Clinic | 1,004 |
+| | | 09.02.02 | Eye and Vision Clinic | 100 |
+| | | 09.02.03 | General Practitioner | 392 |
+| | | 09.02.04 | Genital & Dermatology Clinic| 178 |
+| | | 09.02.05 | Klinik Khitan | 439 |
+| | | 09.02.06 | Maternity Clinic | 342 |
+| | | 09.02.07 | Medical Clinic | 1,723 |
+| **09.03** | **Hospitals** | 09.03.01 | Hospital | 2,777 |
+| | | 09.03.02 | Mother and Child Hospital| 351 |
+| | | 09.03.03 | Psychiatric Hospitals | 38 |
+| **09.04** | **Laboratory** | 09.04.01 | Medical Laboratory | 555 |
+| **09.05** | **Medical Store** | 09.05.01 | Drugstore | 2,731 |
+| | | 09.05.02 | Medical Supply Store | 396 |
+| **09.06** | **Public Health Center**| 09.06.01 | Puskesmas | 5,638 |
+| | | 09.06.02 | Puskesmas Pembantu | 959 |
+| **09.07** | **Rehabilitation** | 09.07.01 | Rehabilitation Center | 5 |
+
+---
+
+### 10. Security and Defense
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **10.01** | **Disaster** | 10.01.01 | Fire Station | 1,145 |
+| **10.02** | **Law** | 10.02.01 | Attorney | 15 |
+| | | 10.02.02 | Court House | 558 |
+| | | 10.02.03 | Law Firm | 41 |
+| | | 10.02.04 | Legal Aid | 3 |
+| | | 10.02.05 | Notary Public | 179 |
+| | | 10.02.06 | Police Station | 2,819 |
+| **10.03** | **Military Facility** | 10.03.01 | Indonesian Air Force | 32 |
+| | | 10.03.02 | Indonesian Army | 1,213 |
+| | | 10.03.03 | Indonesian Navy | 48 |
+| **10.04** | **Prison** | 10.04.01 | Prison | 122 |
+
+---
+
+### 11. Shop and Retail
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **11.01** | **Agriculture** | 11.01.01 | Agricultural Supply Store| 16,579 |
+| | | 11.01.02 | Animal Feed Store | 303 |
+| | | 11.01.03 | Florist | 583 |
+| **11.02** | **Beauty Store & Service**| 11.02.01 | Beauty Clinic | 3,550 |
+| | | 11.02.02 | Make-up Studio | 332 |
+| | | 11.02.03 | Nail Salon | 2,188 |
+| | | 11.02.04 | Perfume Store | 991 |
+| | | 11.02.05 | Skincare & Cosmetic Store| 2,555 |
+| | | 11.02.06 | Tattoo Studio | 235 |
+| **11.03** | **Car and Motorcycle** | 11.03.01 | Bengkel Aki | 1,081 |
+| | | 11.03.02 | Car Accessories Store | 175 |
+| | | 11.03.03 | Car Air Conditioner Repair| 1,947 |
+| | | 11.03.04 | Car Audio Repair | 307 |
+| | | 11.03.05 | Car Body Repair | 335 |
+| | | 11.03.06 | Car Detailing | 555 |
+| | | 11.03.07 | Car Painting | 1,272 |
+| | | 11.03.08 | Car Rental | 936 |
+| | | 11.03.09 | Car Repair and Sparepart | 4,955 |
+| | | 11.03.10 | Car Wash | 1,695 |
+| | | 11.03.11 | Dent Removal Service | 127 |
+| | | 11.03.12 | Motorcycle Accesories Store| 948 |
+| | | 11.03.13 | Motorcycle Rental | 585 |
+| | | 11.03.14 | Motorcycle Repair & Parts| 4,000 |
+| | | 11.03.15 | Motorcycle Wash | 1,614 |
+| | | 11.03.16 | Tambal Ban | 510 |
+| | | 11.03.17 | Tire Shop | 3,303 |
+| **11.04** | **Construction** | 11.04.01 | Construction & Material Store| 1,796 |
+| | | 11.04.02 | Gypsum Store | 233 |
+| | | 11.04.03 | Lumber Store | 40 |
+| | | 11.04.04 | Paint Store | 331 |
+| | | 11.04.05 | Tile Store | 28 |
+| **11.05** | **Dealership** | 11.05.01 | Car Dealership | 3,225 |
+| | | 11.05.02 | Motorcycle Dealership | 3,897 |
+| **11.06** | **Electronic Shop** | 11.06.01 | Audio Store | 1,110 |
+| | | 11.06.02 | Camera Store | 865 |
+| | | 11.06.03 | Computer Store | 2,360 |
+| | | 11.06.04 | Decorative Lighting Store| 121 |
+| | | 11.06.05 | Electrical Supply Store | 3,198 |
+| | | 11.06.06 | Electronic Store | 1,776 |
+| | | 11.06.07 | Konter Pulsa | 38,570 |
+| | | 11.06.08 | Mobile Phone Accesories Store| 533 |
+| | | 11.06.09 | Mobile Phone Store | 2,404 |
+| | | 11.06.10 | Music Store | 556 |
+| **11.07** | **Fashion** | 11.07.01 | Babyshop | 290 |
+| | | 11.07.02 | Bridal Shop | 151 |
+| | | 11.07.03 | Clothing Store | 987 |
+| | | 11.07.04 | Optic Store | 767 |
+| | | 11.07.05 | Shoes Store | 952 |
+| | | 11.07.06 | Sol Sepatu | 115 |
+| | | 11.07.07 | Traditional Tailor | 149 |
+| **11.08** | **Groceries Store** | 11.08.01 | Baking Supply Store | 304 |
+| | | 11.08.02 | Butcher Shop | 8,820 |
+| | | 11.08.03 | Fruit Store | 8,763 |
+| | | 11.08.04 | LPG Agent | 39 |
+| | | 11.08.05 | Rice Shop | 96,659 |
+| | | 11.08.06 | Vegetable Store | 89 |
+| | | 11.08.07 | Water Store | 588 |
+| **11.09** | **Hair Care Services** | 11.09.01 | Barbershop | 3,719 |
+| | | 11.09.02 | Salon | 4,316 |
+| | | 11.09.03 | Traditional Haircut | 2,136 |
+| **11.10** | **Household Goods & Service**| 11.10.01 | Curtain Store | 69 |
+| | | 11.10.02 | Fabric Store | 222 |
+| | | 11.10.03 | Furniture Store | 269 |
+| | | 11.10.04 | Home Improvement Store | 228 |
+| | | 11.10.05 | Rug Store | 93 |
+| **11.11** | **Laundry & Dry Cleaning**| 11.11.01 | Laundromat | 1,558 |
+| | | 11.11.02 | Laundry Service | 397 |
+| **11.12** | **Modern Store** | 11.12.01 | Department Store | 883 |
+| | | 11.12.02 | Hypermarket | 277 |
+| | | 11.12.03 | Minimarket | 33,827 |
+| | | 11.12.04 | Supermarket | 1,982 |
+| **11.13** | **Pet & Domesticated Animal**| 11.13.01 | Aquarium Shop | 613 |
+| | | 11.13.02 | Pet Groomer | 291 |
+| | | 11.13.03 | Pet Shop | 4,162 |
+| | | 11.13.04 | Veterinarian | 775 |
+| **11.14** | **Print and Stationary** | 11.14.01 | Bookstore | 365 |
+| | | 11.14.02 | Digital Printing | 17 |
+| | | 11.14.03 | Photo Studio | 2,266 |
+| | | 11.14.04 | Print and Photocopy Shop| 600 |
+| **11.15** | **Repair Service** | 11.15.01 | Air Conditioner Repair | 733 |
+| | | 11.15.02 | Computer Repair Service | 642 |
+| | | 11.15.03 | Home Appliance Repair | 206 |
+| | | 11.15.04 | Mobile Phone Repair | 1,189 |
+| | | 11.15.05 | Printer Repair Service | 109 |
+| **11.16** | **Shopping Center** | 11.16.01 | Art Market | 58 |
+| | | 11.16.02 | Fish Market | 386 |
+| | | 11.16.03 | Flea Market | 17 |
+| | | 11.16.04 | Livestock Market | 8 |
+| | | 11.16.05 | Shopping Mall | 514 |
+| | | 11.16.06 | Trade Center | 3 |
+| | | 11.16.07 | Traditional Market | 8,641 |
+| **11.17** | **Small Item Shop** | 11.17.01 | Accesories Store | 39 |
+| | | 11.17.02 | Craft Store | 88 |
+| | | 11.17.03 | Doll Store | 79 |
+| | | 11.17.04 | Toy Store | 367 |
+| | | 11.17.05 | Vaporizer Store | 2,077 |
+| **11.18** | **Sporting Goods Store** | 11.18.01 | Archery Store | 10 |
+| | | 11.18.02 | Bicycle Store | 369 |
+| | | 11.18.03 | Fishing Store | 235 |
+| | | 11.18.04 | Golf Store | 33 |
+| | | 11.18.05 | Outdoor Sports Store | 606 |
+| | | 11.18.06 | Sport Game Equipment Store| 437 |
+| | | 11.18.07 | Surf and Swim Store | 97 |
+
+---
+
+### 12. Social Culture
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **12.01** | **Organization** | 12.01.01 | Art Community | 27 |
+| | | 12.01.02 | Foundation | 38 |
+| | | 12.01.03 | Indonesian Red Cross Society| 1 |
+| | | 12.01.04 | Orphanage | 109 |
+| | | 12.01.05 | Political Party Office | 20 |
+| | | 12.01.06 | Religious Organization | 107 |
+| **12.02** | **Place of Worship** | 12.02.01 | Church | 785 |
+| | | 12.02.02 | Hindu Temple | 276 |
+| | | 12.02.03 | Mosque | 11,634 |
+| | | 12.02.04 | Vihara | 144 |
+| **12.03** | **Urban Green Space** | 12.03.01 | Alun Alun | 381 |
+| | | 12.03.02 | Botanical Garden | 84 |
+| | | 12.03.03 | Cemetery | 18,891 |
+| | | 12.03.04 | City Forest | 15 |
+| | | 12.03.05 | Park | 95 |
+
+---
+
+### 13. Sport
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **13.01** | **Fitness Center** | 13.01.01 | Boxing Center | 21 |
+| | | 13.01.02 | Dance Studio | 772 |
+| | | 13.01.03 | Gym | 181 |
+| | | 13.01.04 | Karate Training Center | 11 |
+| | | 13.01.05 | Martial Arts Studio | 10 |
+| | | 13.01.06 | Muay Thai Training Center | 25 |
+| | | 13.01.07 | Pencak Silat Training Center| 4 |
+| | | 13.01.08 | Taekwondo Training Center | 18 |
+| **13.02** | **Game Court** | 13.02.01 | Badminton Court | 75 |
+| | | 13.02.02 | Basketball Court | 8 |
+| | | 13.02.03 | Football Field | 197 |
+| | | 13.02.04 | Futsal Court | 43 |
+| | | 13.02.05 | Tennis Court | 3 |
+| | | 13.02.06 | Volley Court | 5 |
+| **13.03** | **Sport Arena** | 13.03.01 | Archery Range | 3 |
+| | | 13.03.02 | Climbing Wall | 2 |
+| | | 13.03.03 | Horse Riding Field | 6 |
+| | | 13.03.04 | Pool Hall | 45 |
+| | | 13.03.05 | Racing Track | 1 |
+| | | 13.03.06 | Stadium | 13 |
+| | | 13.03.07 | Swimming Pool | 313 |
+
+---
+
+### 14. Tourism
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **14.01** | **Man Made Attraction** | 14.01.01 | Agrotourism | 5,758 |
+| | | 14.01.02 | Outbond | 10 |
+| | | 14.01.03 | Public Aquarium | 3 |
+| | | 14.01.04 | Religious Tourism | 35 |
+| | | 14.01.05 | Temple | 25 |
+| | | 14.01.06 | Theme Park | 91 |
+| | | 14.01.07 | Waterboom | 95 |
+| | | 14.01.08 | Zoo | 63 |
+| **14.02** | **Natural Attraction** | 14.02.01 | Beach | 847 |
+| | | 14.02.02 | Camp Ground | 103 |
+| | | 14.02.03 | Cave | 278 |
+| | | 14.02.04 | Hiking Spot | 145 |
+| | | 14.02.05 | Hot Spring | 82 |
+| | | 14.02.06 | Island Tour | 44 |
+| | | 14.02.07 | Lake | 675 |
+| | | 14.02.08 | Rafting Spot | 40 |
+
+---
+
+### 15. Transportation and Logistic
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **15.01** | **Airport** | 15.01.01 | Domestic Airport | 80 |
+| | | 15.01.02 | International Airport | 18 |
+| | | 15.01.03 | Military Airport | 30 |
+| | | 15.01.04 | Regional Airport | 171 |
+| **15.02** | **Airport Infrastructure**| 15.02.01 | Airport Lounge | 4 |
+| | | 15.02.02 | Airport Shuttle Service | 36 |
+| | | 15.02.03 | Airport Terminal | 243 |
+| **15.03** | **Logistics** | 15.03.01 | Logistic Agent | 508 |
+| | | 15.03.02 | Post Office | 266 |
+| **15.04** | **Ports** | 15.04.01 | Container Port | 23 |
+| | | 15.04.02 | Cruise Home Port | 13 |
+| | | 15.04.03 | Fishing Port | 39 |
+| | | 15.04.04 | Marina | 787 |
+| **15.05** | **Ticket Agent** | 15.05.01 | Bus Ticket Agent | 9 |
+| | | 15.05.02 | Shuttle Service | 200 |
+| **15.06** | **Transport Hub** | 15.06.01 | Bus Shelter | 1,758 |
+| | | 15.06.02 | Bus Station | 840 |
+| | | 15.06.03 | Bus Stop | 5,267 |
+| | | 15.06.04 | Busway Shelter | 324 |
+| | | 15.06.05 | Commuterline Station | 208 |
+| | | 15.06.06 | LRT Station | 26 |
+| | | 15.06.07 | MRT Station | 13 |
+| | | 15.06.08 | Railway Station | 521 |
+| **15.07** | **Transportation Facilities**| 15.07.01 | Charging Station | 2,859 |
+| | | 15.07.02 | Filling Station | 10,881 |
+| | | 15.07.03 | Helipad | 356 |
+| | | 15.07.04 | Runaway Truck Ramp | 41 |
+| | | 15.07.05 | Towing Service | 1 |
+| **15.08** | **Vehicle Depot** | 15.08.01 | Taxi Depot | 66 |
+
+---
+
+### 16. Utility and Telecommunication
+
+| Group Code | Group Name | Category Code | Category Name | POI Count |
+| :--- | :--- | :--- | :--- | :--- |
+| **16.01** | **Landmark Infrastructure**| 16.01.01 | Billboard | 266 |
+| **16.02** | **Observatory** | 16.02.01 | Volcano Observatory | 1 |
+| **16.03** | **Power Infrastructure** | 16.03.01 | Electrical Substation | 2 |
+| **16.04** | **Telecom Infrastructure** | 16.04.01 | Telecommunication Tower | 24,583 |
+| **16.05** | **Utility Service** | 16.05.01 | Electricity Provider Branch| 275 |
+| | | 16.05.02 | Natural Gas Branch | 7 |
+| | | 16.05.03 | Telecommunication Branch | 967 |
+| | | 16.05.04 | Water Distribution Branch| 5 |
+| **16.06** | **Waste Management** | 16.06.01 | Hazardous Waste Disposal | 1 |
+| **16.07** | **Water Management** | 16.07.01 | Dam | 288 |
+| | | 16.07.02 | Pumping Station | 3 |
+| | | 16.07.03 | Water Treatment Plant | 21 |
