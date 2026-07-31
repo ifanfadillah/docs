@@ -237,7 +237,12 @@
     "dark": "/logo/logo-white.svg"
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "href": "https://datacatalogplaylog.netlify.app/docs/intro",
+        "label": "See Playlog Data Catalog ↗"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
